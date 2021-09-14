@@ -1,11 +1,11 @@
 # grupo_11_atletika
 
-Nuestro e-commerce se basa en una tienda deportiva que integra cuatro deportes: Padel, Futbol, Tenis y basket. Apuntamos a un publico que este interesado tanto en iniciar en el deporte como ya profesionales siempre ofreciendo buenos productos que sean accesibles al bolsillo del consumidor. Productos 100% originales a un precio super accesible.
+Nuestro e-commerce se basa en una tienda de bebidas alcoholicas tanto para los amantes del buen vino como para los especialistas en el gin. Ofrecemos todo tipo de bebida tanto alocholica como no alcoholica. Apuntamos a un publico mayor de 18 años que quiera conseguir sus insumos preferidos a un precio inigualable, nunca antes visto!.   
 
 Listado 5 referentes:
-- Solo deportes
-- Dexter
-- SportLine
-- Nike Argentina
-- Adidas
+- Full escabio
+- El gordito bebidas
+- Craft society
+- Duty Free Buenos Aires
+- Rappi
 
