@@ -1,4 +1,4 @@
-# grupo_11_LosCuatroBorrachos
+# grupo_11_Absolut
 
 Nuestro e-commerce se basa en una tienda de bebidas alcoholicas tanto para los amantes del buen vino como para los especialistas en el gin. Ofrecemos todo tipo de bebida tanto alocholica como no alcoholica. Apuntamos a un publico mayor de 18 años que quiera conseguir sus insumos preferidos a un precio inigualable, nunca antes visto!.   
 
