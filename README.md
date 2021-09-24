@@ -11,3 +11,5 @@ Listado 5 referentes:
 - Trello: https://trello.com/b/7xoY1fOc
 Integrantes:
 - Julio Coombes: 22 años, estudiante de ingenieria en sistemas en la universidad CAECE.
+- Matias Sragowicz: 18 años, estudiante de licenciatura en sistemas de informacion en la UBA.
+- 
