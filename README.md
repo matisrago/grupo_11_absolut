@@ -8,4 +8,5 @@ Listado 5 referentes:
 - Craft society
 - Duty Free Buenos Aires
 - Rappi
-
+Integrantes:
+- Julio Coombes: 22 años, estudiante de ingenieria en sistemas en la universidad CAECE.
