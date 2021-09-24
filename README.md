@@ -1,15 +1,18 @@
-# grupo_11_atletika
+# grupo_11_LosCuatroBorrachos
 
 Nuestro e-commerce se basa en una tienda de bebidas alcoholicas tanto para los amantes del buen vino como para los especialistas en el gin. Ofrecemos todo tipo de bebida tanto alocholica como no alcoholica. Apuntamos a un publico mayor de 18 años que quiera conseguir sus insumos preferidos a un precio inigualable, nunca antes visto!.   
 
 Listado 5 referentes:
-- Full escabio
-- El gordito bebidas
-- Craft society
-- Duty Free Buenos Aires
-- Rappi
+- Full escabio (Lo elegimos por ser un referente en el mercado en que apuntamos)
+- El gordito bebidas (Lo elegimos por el estilo de sitio web que nos inspiro para la creacion del nuestro)
+- Craft society (Lo elegimos por ser un referente en el mercado en que apuntamos)
+- Adidas (Lo elegimos porque de este sitio web nos inspiramos en crear el detalle del producto)
+- Rappi  (Lo elegimos porque nos inspiro mucho en todo lo que es el modelo de nuestro e-commerce en forma mobile)
+
 - Trello: https://trello.com/b/7xoY1fOc
+
 Integrantes:
+
 - Julio Coombes: 22 años, estudiante de ingenieria en sistemas en la universidad CAECE.
 - Matias Sragowicz: 18 años, estudiante de licenciatura en sistemas de informacion en la UBA.
 - 
