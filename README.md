@@ -17,4 +17,4 @@ Integrantes:
 - Julio Coombes: 22 años, estudiante de ingenieria en sistemas en la universidad CAECE.
 - Matias Sragowicz: 18 años, estudiante de licenciatura en sistemas de informacion en la UBA.
 - Tomás Buteler Tillard: 19 años, estudiante de ingenieria en sitemas en la UTN.
-- 
+- Juan Ignacio Elias: 21 años , estuidante de marketing en la UP.
