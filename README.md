@@ -10,7 +10,7 @@ Listado 5 referentes:
 - Rappi  (Lo elegimos porque nos inspiro mucho en todo lo que es el modelo de nuestro e-commerce en forma mobile)
 
 - Trello: https://trello.com/b/7xoY1fOc
-- Figma: https://www.figma.com/files/project/38029691/Team-project?fuid=1019434183212668228(accesos compartidos a german.monzon@digitalhouse.com y mvieira@digitalhouse.com)
+- Figma: https://www.figma.com/files/project/38029691/Team-project?fuid=1019434183212668228 (accesos compartidos a german.monzon@digitalhouse.com y mvieira@digitalhouse.com)
 
 Integrantes:
 
