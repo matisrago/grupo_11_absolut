@@ -9,3 +9,7 @@ app.listen(port, () => {
 app.get("/detalle",(req,res)=>{
     res.sendFile(path.join(__dirname,"./views/detalleProducto.html"))
 })
+
+app.get("/formulario",(req,res)=>{
+    res.sendFile(path.join(__dirname,"./views/formDeRegistro.html"))
+})
