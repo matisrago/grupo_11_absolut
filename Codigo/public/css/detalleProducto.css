@@ -1,6 +1,7 @@
 *{
     background-color: #ffe4c4;
     box-sizing: border-box;
+    
 }
 #main{
     width: 100vw;
@@ -8,9 +9,16 @@
     align-self: center;
     margin: auto;
     border: solid 1px black;
+    max-width: 400px;
+}
+#botones{
+    font-size: 15px;
+    color: black;
 }
 img{
+    max-width: 200px;
     width: 33%;
     height: 33%;
     margin: 0.5px;
+    border: solid black 1px;
 }
