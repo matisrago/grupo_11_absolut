@@ -4,20 +4,40 @@
     <link rel = "stylesheet" href="./css/detalleProducto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel = "stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
+<body>
 <header>
-    <img id="main" src="./images/thumb_61391_default_big.jpeg">
-</header>
-<main>
-    <section id="texto">
-    <h2>Nombre del producto</h2>
-    <h4>Descripcion</h4>
-    <h5>Precio</h5>
-    </section>
-    <section id="botones">
-        <i class="fas fa-plus"></i><span>Cantidad de elementos</span><i class="fas fa-minus"></i>
+    <i id="retroceder"class="fas fa-arrow-left"></i>
+    <h3 class="desktop" id="navBar"><input/><i class="fas fa-search"></i></h3>
+    <div class="desktop">
+        <h2>Home</h2>
+        <h2>Categoria 1</h2>
+        <h2>Categoria 2</h2>
+        <h2>Categoria 3</h2>
+        <h2>Categoria 4</h2>
 
+    </div>
+</header>
+    <main>
+    <div class="producto">
+    <img id="imagen" src="./images/thumb_61391_default_big.jpeg">
+    <div class="datos">
+    <h2 id="nombreProducto">Nombre del producto</h2>
+    <h4 id= "descripcion">Descripcion</h4>
+    <h5 id="precio">Precio</h5>
+    </div>
+    <section id="botones">
+    <i class="fas fa-plus"></i><span>Cantidad de elementos</span><i class="fas fa-minus"></i>
+    <span>Agregar al carrito</span>
     </section>
+    </div>
     <h3>Productos relacionados</h3>
-    <img src="./images/gin.jpg"><img src="./images/vodka.jpg"><img src="./images/champagne.jpg">
-</main>
+    <div class="relacionados">
+    <img src="./images/gin.jpg">
+    <img src="./images/vodka.jpg">
+    <img src="./images/champagne.jpg">
+    </div>
+    </main>
+</body>

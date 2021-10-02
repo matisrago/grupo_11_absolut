@@ -1,13 +1,17 @@
 *{
     background-color: #ffe4c4;
     box-sizing: border-box;
-    
+    font-family: 'PT Sans', sans-serif;
 }
-#main{
+.desktop{
+    display: none;
+}
+
+#imagen{
     width: 100vw;
     height: auto;
     align-self: center;
-    margin: auto;
+    margin: 0px 10px 10px 0px;
     border: solid 1px black;
     max-width: 400px;
 }
@@ -21,4 +25,37 @@ img{
     height: 33%;
     margin: 0.5px;
     border: solid black 1px;
+}
+@media  (min-width: 1024px){
+    .desktop{ 
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #d3d3d3;
+        margin: 0px;
+    }
+    .desktop *{
+        background-color: #d3d3d3;
+    }
+    .producto{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .datos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    #botones{
+        align-self: flex-end;
+    }
+
+    #retroceder{
+        display: none;
+    }
+    .relacionados{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
 }
