@@ -1,8 +1,44 @@
-#flecha{
-    height: max-content;
+
+* {
+    background-color: #ffe4c4;
+    box-sizing: border-box;
+
+}
+.titulo{
+    font-family: 'Monoton', cursive;
+    font-size: 24px;
+}
+.infor{
+    font-family: 'Monoton', cursive;
+    font-size: 14px;
 }
 
-#carrito{
-    text-align: right;
+p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+.top-header-flex{
+    display: flex;
+    justify-content: space-between;
 }
 
+#busqueda{
+    align-self: flex-end;
+}
+
+.input-large{
+    width: 309px;
+height: 23px;
+left: 20px;
+top: 250px;
+}
+
+.input-enviar{
+    height: 35px;
+    margin: 25px;
+    width: 100px;
+}
+
+#boton-enviar{
+    text-align: center;
+}

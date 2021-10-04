@@ -6,12 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de registro</title>
     <link rel="stylesheet" href="./css/formDeRegistro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <div>
- <p>Flecha           logo                      carrito Busqueda</p>
+<div class="top-header-flex">
+    <p id = "flecha">Flecha</p>           
+    <p id = "logo">logo</p>
+    <p id = carrito>carrito </p> 
+    <p id="busqueda">Busqueda</p>
 </div>
 </header>
+<main>
+    <section>
+        <article>
+        <h2 class="titulo">NUEVA CUENTA</h2>
+        <h4 class="infor">INFORMACION PERSONAL</h4>
+        </article>
+
+        <article>
+            <form action="">
+            <p>Nombre*</p>
+            <input  type="text" name="nombre" value="" placeholder="Nombre" class ="input-large">
+            <p>Apellido*</p>
+            <input  type="text" name="Apellido" value="" placeholder="apellido" class ="input-large">
+            <p>Edad*</p>
+            <input  type="date" name="Edad" class ="input-large">
+            <p><a href="">Acepto los terminos y condiciones </a> <input id ="checkbox" type="checkbox"></p>
+        </form>
+        </article>
+
+    <article>
+        <h4 class="infor">INFORMACION DE INICIO DE SESION</h4>
+    </article>
+
+    <article>
+        <form action="">
+        <p>Correo electronico</p>
+        <input type="email" name="correo" value="" placeholder="Correo Electronico" class ="input-large">
+        <p>Contraseña</p>
+        <input type="password" name="contraseña" value="" placeholder="Contraseña" class ="input-large">
+        <p> Repetir Contraseña</p>
+        <input type="password" name="contraseña" value="" placeholder="Contraseña" class ="input-large">
+    <div id="boton-enviar">
+            <input class="input-enviar" type="submit" name="" value="Enviar">
+    </div>
+        </form>
+    </article>
+    </section>
+</main>
 </body>
 </html>
