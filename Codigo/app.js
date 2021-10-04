@@ -13,3 +13,6 @@ app.get("/detalle",(req,res)=>{
 app.get("/formulario",(req,res)=>{
     res.sendFile(path.join(__dirname,"./views/formDeRegistro.html"))
 })
+app.get("/login",(req,res)=>{
+    res.sendFile(path.join(__dirname,"./views/formDeLogin.html"))
+})

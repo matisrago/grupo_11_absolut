@@ -3,8 +3,18 @@
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
+.iconos {
+    display: flex;
+    gap: 90%;
+}
+
+body{
+    text-align: center;
+   
+}
 .desktop{
     display: none;
+   
 }
 
 #imagen{
@@ -19,14 +29,21 @@
     font-size: 15px;
     color: black;
 }
+.relacionados{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
 img{
     max-width: 200px;
     width: 33%;
     height: 33%;
-    margin: 0.5px;
     border: solid black 1px;
 }
 @media  (min-width: 1024px){
+    .iconos{
+        display: none;
+    }
     .desktop{ 
         display: flex;
         justify-content: space-evenly;
@@ -50,12 +67,13 @@ img{
         align-self: flex-end;
     }
 
-    #retroceder{
-        display: none;
-    }
+    
     .relacionados{
         display: flex;
         justify-content: space-evenly;
+    }
+    h3{
+        text-align: left;
     }
     
 }
