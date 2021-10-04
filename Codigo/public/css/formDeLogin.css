@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+* {
+    background-color: #ffe4c4;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'monoton';
+}
+
+.form-login {
+    width: 400px;
+    height: 340px;
+    background: #FFE4C4;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #FFE4C4;
+    padding: 30px 40px;
+    color: #272626;
+}
+
+.form-login h5 {
+    margin: 0px;
+    text-align: center;
+    height: 24px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+    border-top: 5px solid;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+}
+
+.controls {
+    width: 100%;
+    border: 1px solid #D3D3D3;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #D3D3D3;
+    font-size: 16px;
+    font-weight: pt sans;
+}
+
+.buttons {
+    width: 100%;
+    height: 10%;
+    background: #71baff;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.form-login p {
+    height: 40px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 5px solid;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+}
+
+.form-login a {
+    color: #0000009d;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-login a:hover {
+    text-decoration: underline;
+}
