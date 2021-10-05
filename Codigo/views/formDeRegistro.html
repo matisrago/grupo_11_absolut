@@ -9,50 +9,86 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Monoton&family=PT+Sans&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/be6f779264.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
 <div class="top-header-flex">
-    <p id = "flecha">Flecha</p>           
-    <p id = "logo">logo</p>
-    <p id = carrito>carrito </p> 
-    <p id="busqueda">Busqueda</p>
+    <p id = "flecha"><i class="fas fa-arrow-left"></i></p>           
+    <p id = "logo"><img src="../images/logo-proyectoV2.jpg" alt="logo" ></p>
+    <div class="header-top-right">
+    <p id = "carrito"><i class="fas fa-shopping-cart"></i></p> 
+    <p id="busqueda"><i class="fas fa-search"></i></p>
+    </div>
 </div>
+<div class="header-desktop">
+    <p id = "logo"><img src="../images/logo-proyectoV2.jpg" alt="logo" ></p>
+    
+    <div class="lupa">
+    <form action="/resultado-busqueda">    
+        <label for="search-bar">
+        <input type="text" name="search-bar" id="search-bar" placeholder="busqueda..."> <p id="busqueda"></p>
+        </label>
+    </form>
+    <i class="fas fa-search" ></i>
+    </div>
+    <div class="desktop-top-header"> 
+        <p id ="inicio-sesion"><i class="fas fa-portrait"></i></p> 
+        <p id = "carrito"><i class="fas fa-shopping-cart"></i></p> 
+    </div>
+
+</div>
+<nav>
+    <div class="desktop">
+        <a href=""><h2>Home</h2></a>
+        <a href=""><h2>Categoria 1</h2></a>
+        <a href=""><h2>Categoria 2</h2></a>
+        <a href=""><h2>Categoria 3</h2></a>
+    </div>  
+</nav>
 </header>
 <main>
     <section>
-        <article>
         <h2 class="titulo">NUEVA CUENTA</h2>
-        <h4 class="infor">INFORMACION PERSONAL</h4>
-        </article>
-
         <article>
-            <form action="">
-            <p>Nombre*</p>
-            <input  type="text" name="nombre" value="" placeholder="Nombre" class ="input-large">
-            <p>Apellido*</p>
-            <input  type="text" name="Apellido" value="" placeholder="apellido" class ="input-large">
-            <p>Edad*</p>
-            <input  type="date" name="Edad" class ="input-large">
-            <p><a href="">Acepto los terminos y condiciones </a> <input id ="checkbox" type="checkbox"></p>
-        </form>
-        </article>
+        
+            <form action="/resultado-registro" method ="POST">
+             <div class ="flex-all">  
+                <div class="flex-left">
+                <h4 class="infor">INFORMACION PERSONAL</h4>
+                <label for="fName"> Nombre* <br>
+            <input  type="text" name="fName" placeholder="Nombre" id="fName">
+            </label> <br> <br>
+            <label for="lName"> Apellido* <br>
+                <input  type="text" name="lName" placeholder="Apellido" id="lName">
+                </label> <br><br>
+            <label for="date"> Edad* <br>
+            <input  type="date" name="date" id="date">
+            </label><br><br>
 
-    <article>
+            <label for="conditions"><a href="">Acepto los terminos y condiciones </a>
+                <input id ="conditions" type="checkbox" name="conditions">
+            </label> <br><br>
+        </div>
+        <div class="flex-rigth">
         <h4 class="infor">INFORMACION DE INICIO DE SESION</h4>
-    </article>
 
-    <article>
-        <form action="">
-        <p>Correo electronico</p>
-        <input type="email" name="correo" value="" placeholder="Correo Electronico" class ="input-large">
-        <p>Contraseña</p>
-        <input type="password" name="contraseña" value="" placeholder="Contraseña" class ="input-large">
-        <p> Repetir Contraseña</p>
-        <input type="password" name="contraseña" value="" placeholder="Contraseña" class ="input-large">
-    <div id="boton-enviar">
-            <input class="input-enviar" type="submit" name="" value="Enviar">
-    </div>
+        <label for="email"> Correo electronico <br>
+        <input type="email" name="email"  placeholder="Correo Electronico" id="email">
+        </label> <br><br>
+
+         <label for="password"> Contraseña <br>
+        <input type="password" name="password"  placeholder="Contraseña" id = "password">
+         </label> <br><br>
+
+       <label for="repeat-password"> Repetir Contraseña <br>
+        <input type="password" name="repeat-password" placeholder="Contraseña" id="repeat-password">
+       </label> <br><br>
+        </div>
+        </div> 
+        <div class="button-submit">
+       <button type ="submit"> Enviar</button>
+        </div>
         </form>
     </article>
     </section>
