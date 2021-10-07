@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+header div img{
+    width: 80px;
+    padding: 5px;
+}
+
+#search-bar{
+    border-radius: 50px;
+}
+
+.header-flex{
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 93%;
+}
+.search-bar{
+    padding-left: 28%;
+}

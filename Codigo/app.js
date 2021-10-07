@@ -6,6 +6,10 @@ app.use(express.static("public"));
 app.listen(port, () => {
     console.log("Funcionando")
 })
+
+app.get("/",(req,res)=>{
+    res.sendFile(path.join(__dirname,"./views/home.html"))
+})
 app.get("/detalle",(req,res)=>{
     res.sendFile(path.join(__dirname,"./views/detalleProducto.html"))
 })
@@ -16,3 +20,4 @@ app.get("/formulario",(req,res)=>{
 app.get("/login",(req,res)=>{
     res.sendFile(path.join(__dirname,"./views/formDeLogin.html"))
 })
+
