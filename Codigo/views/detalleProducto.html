@@ -10,16 +10,23 @@
 <body>
 <header>
     <div class="iconos">
-    <a href=""><i class="fas fa-arrow-left"></i></a>
-    <a href=""><i id="carro" class="fas fa-shopping-cart"></i></a>
+        <a href=""><i class="fas fa-arrow-left"></i></a>
+        <a href=""><i id="carro" class="fas fa-shopping-cart"></i></a>
     </div>
-    <h3 class="desktop" id="navBar"><input/></h3>
+    <div class="desktop lupa">
+        <img id="logo" src="../images/logo-proyectoV2.jpg" alt="logo" >
+            <form action="/resultado-busqueda">    
+                <label for="search-bar">
+                <input type="text" name="search-bar" id="search-bar" placeholder="busqueda..."> <p id="busqueda"></p>
+                </label>
+            </form>
+            <i class="fas fa-search" ></i>
+    </div>  
     <div class="desktop">
         <a href=""><h2>Home</h2></a>
         <a href=""><h2>Categoria 1</h2></a>
         <a href=""><h2>Categoria 2</h2></a>
         <a href=""><h2>Categoria 3</h2></a>
-        <a href=""><h2>Carrito</h2></a>
 
     </div>
 </header>
@@ -27,14 +34,17 @@
     <div class="producto">
     <img id="imagen" src="./images/thumb_61391_default_big.jpeg">
     <div class="datos">
-    <h2 id="nombreProducto">Nombre del producto</h2>
-    <h4 id= "descripcion">Descripcion</h4>
-    <h5 id="precio">Precio</h5>
+    <h2 id="nombreProducto">Cerveza Quilmes</h2>
+    <h4 id= "descripcion">Cerveza quilmes sabor clasico 340ml</h4>
+    <h5 id="precio">$220</h5>
     </div>
     <section id="botones">
-    <i class="fas fa-plus"></i><span>Cantidad de elementos</span><i class="fas fa-minus"></i>
-    <span>Agregar al carrito</span>
-    </section>
+    <form action="detalleProducto">
+
+    <button type="button"><i class="fas fa-plus"></i></button><span>15</span><button type="button"><i class="fas fa-minus"></i></button>
+    <button type="button">Agregar al carrito</button>
+    </form>
+</section>
     </div>
     <h3>Productos relacionados</h3>
     <div class="relacionados">
@@ -44,3 +54,17 @@
     </div>
     </main>
 </body>
+<footer>
+    <div class=textoFooter>
+    <i class="fas fa-credit-card"></i>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</div>
+<div class="textoFooter">
+    <i class="fas fa-truck"></i>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</div>
+<div class="textoFooter">
+    <i class="fas fa-shield-alt"></i>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</div>
+</footer>

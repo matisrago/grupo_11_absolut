@@ -7,7 +7,9 @@
     display: flex;
     gap: 90%;
 }
-
+#logo{
+    display: none;
+}
 body{
     text-align: center;
    
@@ -24,10 +26,20 @@ body{
     margin: 0px 10px 10px 0px;
     border: solid 1px black;
     max-width: 400px;
+    
+}
+#nombreProducto{
+    font-size: 30px;
+}
+#precio{
+    font-size: 24px;
 }
 #botones{
-    font-size: 15px;
+    font-size: 70px;
     color: black;
+}
+#botones span{
+    font-size: 25px;
 }
 .relacionados{
     display: flex;
@@ -40,18 +52,51 @@ img{
     height: 33%;
     border: solid black 1px;
 }
-@media  (min-width: 1024px){
+footer{
+    display: none;
+}
+@media  (min-width: 720px){
     .iconos{
         display: none;
+    }
+    #logo{
+        display: flex;
+        width: 50px;
+        height: auto;
+        position:absolute;
+        left: 10px;
+        top: 10px;
+
+    }
+    #search-bar{
+        display: flex;
+        width: 250px;
+    }
+    input {
+        background-color: #ffe4c4;
+    }
+    .desktop.lupa {
+        display: flex;
+        padding-top:30px ;
+        width: 100%;
+        align-content: center;
+        background-color: #ffe4c4;
+        
     }
     .desktop{ 
         display: flex;
         justify-content: space-evenly;
-        background-color: #d3d3d3;
+        background-color: #efdddd;
         margin: 0px;
     }
-    .desktop *{
-        background-color: #d3d3d3;
+    a{
+        background-color: #efdddd;
+    }
+    a *{
+        background-color: #efdddd;
+    }
+    img:hover{
+        box-shadow: 2px 2px black;
     }
     .producto{
         display: flex;
@@ -75,5 +120,14 @@ img{
     h3{
         text-align: left;
     }
-    
+    footer{
+        display: flex;
+        margin-top: 60px;
+        background-color: black;
+
+    }
+    .textoFooter i{
+        font-size: 50px;
+    }
+        
 }
