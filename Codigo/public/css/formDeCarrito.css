@@ -70,6 +70,12 @@ div.button-comprar{
     display: flex;
     justify-content: center;
 }
+div.descuento{
+    margin-right: -44px;
+}
+div.subtotal{
+    margin-right: -88px;
+}
 
 @media(min-width:720px){
     h2.cate{
@@ -96,9 +102,9 @@ div.button-comprar{
     }
     div.button-comprar {
         display: flex;
-    justify-content: flex-end;
-    position: relative;
-    left: -135px;
+        justify-content: flex-end;
+        position: relative;
+        left: -356px;
     }
     div.linea{
         
@@ -106,6 +112,12 @@ div.button-comprar{
         margin-right: 50px;
         width: 90%;
         border-bottom: 1px solid black ;
+    }
+    div.descuento{
+        margin-right: 9px;
+    }
+    div.subtotal{
+        margin-right: 1px;
     }
     
 }

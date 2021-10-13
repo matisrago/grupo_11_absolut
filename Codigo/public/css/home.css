@@ -6,9 +6,7 @@ body{
     background-color: #FFE4C4;
 }
 
-a{
-    color: black;
-}
+
 
 #h3-text{
     padding-left: 3%;
@@ -59,6 +57,9 @@ main img{
     header div img{
     position: relative;
     top: 20px;
+    }
+    #links{
+        background-color: #FFE4C4;
     }
 
 }
