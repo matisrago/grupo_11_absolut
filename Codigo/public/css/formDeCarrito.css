@@ -2,23 +2,12 @@
 * {
     
     box-sizing: border-box;
-    margin: 0;
-}
-p.flecha{
-    margin-top:25px;
-    margin-left: 15px;
 }
 body{
     background-color: #ffe4c4;
     font-family: 'Monoton', cursive;
 }
 
-
-
-#imagen-logo{
-    width: 67px;
-    margin-left: 50px;
-}
 p {
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
@@ -81,51 +70,8 @@ div.button-comprar{
     display: flex;
     justify-content: center;
 }
-div.header-desktop{
-    display: none;
-}
-nav{
-    display: none;
-}
 
 @media(min-width:720px){
-    div.header-phone{
-        display: none;
-    }
-    div.header-desktop{
-        display: initial;
-        background-color: grey;
-        
-    }
-    header{
-        background-color: grey;
-        
-    }
-    #imagen-logo{
-        margin: 20px;
-    }
-    nav{
-        display:initial
-    }
-    div.desktop{
-        display: flex;
-        justify-content: space-between;
-        background-color: rgb(190, 134, 243);
-        border: solid 1px black;
-    }
-    a{
-        text-decoration: none;
-    }
-    div.img-barra-contacto{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    #contacto{
-        position: relative;
-        
-        margin-right: 20px;
-    }
     h2.cate{
         margin-left: 20px;
         margin-right: 20px;

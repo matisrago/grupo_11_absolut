@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de registro</title>
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/formDeRegistro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,41 +13,33 @@
 <script src="https://kit.fontawesome.com/be6f779264.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
-<div class="top-header-flex">
-    <p id = "flecha"><i class="fas fa-arrow-left"></i></p>           
-    <p id = "logo"><img src="../images/logo-proyectoV2.jpg" alt="logo" ></p>
-    <div class="header-top-right">
-    <p id = "carrito"><i class="fas fa-shopping-cart"></i></p> 
-    <p id="busqueda"><i class="fas fa-search"></i></p>
-    </div>
-</div>
-<div class="header-desktop">
-    <p id = "logo"><img src="../images/logo-proyectoV2.jpg" alt="logo" ></p>
+    <header>
+        <div class="iconos">
+            <a href=""><i class="fas fa-arrow-left"></i></a>
+            <a href=""><i id="carro" class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div class="desktop lupa">
+            <img id="logo" src="../images/logo-proyectoV2.jpg" alt="logo" >
+                <form action="/resultado-busqueda">    
+                    <label for="search-bar">
+                    <input type="text" name="search-bar" id="search-bar" placeholder="busqueda..."> <p id="busqueda"></p>
+                    
+                </label>
+            </form>
+            <i class="fas fa-search" ></i>
+            <div class="iconosDesktop">
+            <i class="fas fa-portrait"></i>
+            <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>  
+        <div class="desktop">
+            <a href=""><h2>Home</h2></a>
+            <a href=""><h2>Categoria 1</h2></a>
+            <a href=""><h2>Categoria 2</h2></a>
+            <a href=""><h2>Categoria 3</h2></a>
     
-    <div class="lupa">
-    <form action="/resultado-busqueda">    
-        <label for="search-bar">
-        <input type="text" name="search-bar" id="search-bar" placeholder="busqueda..."> <p id="busqueda"></p>
-        </label>
-    </form>
-    <i class="fas fa-search" ></i>
-    </div>
-    <div class="desktop-top-header"> 
-        <p id ="inicio-sesion"><i class="fas fa-portrait"></i></p> 
-        <p id = "carrito"><i class="fas fa-shopping-cart"></i></p> 
-    </div>
-
-</div>
-<nav>
-    <div class="desktop">
-        <a href=""><h2>Home</h2></a>
-        <a href=""><h2>Categoria 1</h2></a>
-        <a href=""><h2>Categoria 2</h2></a>
-        <a href=""><h2>Categoria 3</h2></a>
-    </div>  
-</nav>
-</header>
+        </div>
+    </header>
 <main>
     <section>
         <h2 class="titulo">NUEVA CUENTA</h2>

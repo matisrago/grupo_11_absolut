@@ -6,39 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/header.css">
     <script src="https://kit.fontawesome.com/be6f779264.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Monoton&family=PT+Sans&display=swap" rel="stylesheet">
 </head>
-<body>
- <header>
-     <div id="logo">
-         <img src="../images/logo-proyectoV2.jpg" alt="Logo">
-     </div>
-     <div class="header-flex">
-     <div class="search-bar">
-         <form action="" method="POST">
-             <label for="search-bar">
-                 <input type="text" name="search-bar" id="search-bar" placeholder="Buscar...">
-             </label>
-             <i class="fas fa-search" ></i>
-         </form>
-     </div>
-     <div class="top-header-right">
-        <i class="fas fa-shopping-cart"></i>
-        <i class="fas fa-portrait"></i>
-     </div>
+<header>
+    <div class="iconos">
+        <a href=""><i class="fas fa-arrow-left"></i></a>
+        <a href=""><i id="carro" class="fas fa-shopping-cart"></i></a>
     </div>
-    <nav>
-    <div class="desktop-header-flex">
+    <div class="desktop lupa">
+        <img id="logo" src="../images/logo-proyectoV2.jpg" alt="logo" >
+            <form action="/resultado-busqueda">    
+                <label for="search-bar">
+                <input type="text" name="search-bar" id="search-bar" placeholder="busqueda..."> <p id="busqueda"></p>
+                
+            </label>
+        </form>
+        <i class="fas fa-search" ></i>
+        <div class="iconosDesktop">
+        <i class="fas fa-portrait"></i>
+        <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>  
+    <div class="desktop">
         <a href=""><h2>Home</h2></a>
         <a href=""><h2>Categoria 1</h2></a>
         <a href=""><h2>Categoria 2</h2></a>
         <a href=""><h2>Categoria 3</h2></a>
+
     </div>
-    </nav>
-</header> 
+</header>
+<body>
  <main>
      <section>
     <article>
@@ -103,7 +104,7 @@
     </article>
      </section>
  </main>
- <footer>
+<footer>
     <div class=textoFooter>
     <i class="fas fa-credit-card"></i>
     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>

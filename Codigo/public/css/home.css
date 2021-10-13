@@ -1,37 +1,13 @@
 *{
-    margin:0;
-    padding: 0;
     font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
 }
 body{
     background-color: #FFE4C4;
 }
 
-header div img{
-    width: 80px;
-    padding: 5px;
-}
-
-#search-bar{
-    border-radius: 50px;
-}
 a{
     color: black;
-}
-
-.header-flex{
-    display: inline-flex;
-    justify-content: space-between;
-    margin: 10px;
-    width: 93%;
-    align-items: center;
-}
-.search-bar{
-    padding-left: 23%;
-}
-
-.desktop-header-flex{
-    display:none;
 }
 
 #h3-text{
@@ -66,17 +42,6 @@ main img{
         max-width: 674px;
         justify-content: space-around;
     }
-    .desktop-header-flex{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-    nav{
-        background-color: #bfb9b1;
-    }
-    .search-bar{
-        padding-left: 38%;
-    }
 }
 
 @media(min-width:720px){
@@ -95,4 +60,5 @@ main img{
     position: relative;
     top: 20px;
     }
+
 }

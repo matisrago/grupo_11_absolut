@@ -7,6 +7,9 @@
     display: flex;
     gap: 90%;
 }
+.iconosDesktop{
+    display: none;
+}
 #logo{
     display: none;
 }
@@ -59,6 +62,11 @@ footer{
     .iconos{
         display: none;
     }
+    .iconosDesktop{
+        display: flex;
+        position: absolute;
+        right: 20px;
+        }
     #logo{
         display: flex;
         width: 50px;
@@ -81,11 +89,12 @@ footer{
         width: 100%;
         align-content: center;
         background-color: #ffe4c4;
+        justify-content: center;
         
     }
     .desktop{ 
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         background-color: #efdddd;
         margin: 0px;
     }
@@ -111,8 +120,6 @@ footer{
     #botones{
         align-self: flex-end;
     }
-
-    
     .relacionados{
         display: flex;
         justify-content: space-evenly;
