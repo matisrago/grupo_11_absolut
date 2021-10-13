@@ -20,4 +20,7 @@ app.get("/formulario",(req,res)=>{
 app.get("/login",(req,res)=>{
     res.sendFile(path.join(__dirname,"./views/formDeLogin.html"))
 })
+app.get("/carrito",(req,res)=>{
+    res.sendFile(path.join(__dirname,"./views/carrito.html"))
+})
 
