@@ -19,7 +19,7 @@ header{
 }
 .desktop{
     display: none;
-   
+    
 }
 @media  (min-width: 720px){
     .iconos{
