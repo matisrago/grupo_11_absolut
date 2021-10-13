@@ -76,6 +76,9 @@ div.descuento{
 div.subtotal{
     margin-right: -88px;
 }
+#carro{
+    display: none;
+}
 
 @media(min-width:720px){
     h2.cate{
@@ -107,7 +110,7 @@ div.subtotal{
         left: -356px;
     }
     div.linea{
-        
+        margin-top: 20px;
         margin-left: 50px;
         margin-right: 50px;
         width: 90%;

@@ -1,5 +1,5 @@
 *{
-    background-color: #ffe4c4;
+    
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
    
@@ -38,9 +38,7 @@ header{
     display: flex;
     width: 250px;
 }
-input {
-    background-color: #ffe4c4;
-}
+
 .desktop.lupa {
     display: flex;
     padding-top:30px ;
