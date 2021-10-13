@@ -1,5 +1,4 @@
 *{
-    background-color: #ffe4c4;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
    
@@ -43,9 +42,7 @@ header{
         display: flex;
         width: 250px;
     }
-    input {
-        background-color: #ffe4c4;
-    }
+    
     .desktop.lupa {
         display: flex;
         padding-top:30px ;
@@ -61,10 +58,15 @@ header{
         background-color: #efdddd;
         margin: 0px;
     }
-    a{
+
+    a.barra-de-cate{
         background-color: #efdddd;
     }
-    a *{
-        background-color: #efdddd;
+   
+    #links{
+         color: black;
+    }
+    a{
+        color: black;
     }
 }

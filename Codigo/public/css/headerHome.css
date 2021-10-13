@@ -1,29 +1,40 @@
 *{
-    background-color: #ffe4c4;
+    
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
    
 }
-header{
-    text-align: center;
+.desktop{
+    display: none;
 }
-.iconos {
-    display: flex;
-    gap: 90%;
+.menu{
+    display: block;
+    text-align: center;
+    font-size: 20px;
 }
 .iconosDesktop{
     display: none;
-}
-#logo{
+    }
+#links{
     display: none;
 }
 .iconos{
+    display: none;
+}
+@media (min-width:720px){
+
+header{
+    text-align: center;
+}
+.menu{
     display: none;
 }
 .iconosDesktop{
     display: flex;
     position: absolute;
     right: 20px;
+    height: 20px;
+    width: 20px;
     }
 #logo{
     display: flex;
@@ -38,9 +49,7 @@ header{
     display: flex;
     width: 250px;
 }
-input {
-    background-color: #ffe4c4;
-}
+
 .desktop.lupa {
     display: flex;
     padding-top:30px ;
@@ -50,6 +59,10 @@ input {
     justify-content: center;
     
 }
+#links{
+    display: flex;
+    background-color: #ffe4c4;
+}
 .desktop{ 
     display: flex;
     justify-content: space-between;
@@ -57,8 +70,7 @@ input {
     margin: 0px;
 }
 a{
+    color: black;
     background-color: #efdddd;
 }
-a *{
-    background-color: #efdddd;
 }

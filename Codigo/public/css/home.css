@@ -6,9 +6,7 @@ body{
     background-color: #FFE4C4;
 }
 
-a{
-    color: black;
-}
+
 
 #h3-text{
     padding-left: 3%;
@@ -33,6 +31,9 @@ main img{
     margin: auto;
     display: block;
     padding-bottom: 5%;
+}
+#quilmes{
+    width: 160px;
 }
 
 @media(min-width:480px){
@@ -59,6 +60,10 @@ main img{
     header div img{
     position: relative;
     top: 20px;
+    }
+    #links{
+        color: black;
+        background-color: #FFE4C4;
     }
 
 }

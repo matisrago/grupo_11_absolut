@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/headerHome.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <script src="https://kit.fontawesome.com/be6f779264.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,6 @@
 <header>
     <div class="iconos">
         <a href=""><i class="fas fa-arrow-left"></i></a>
-        <a href=""><i id="carro" class="fas fa-shopping-cart"></i></a>
     </div>
     
     <div class="desktop lupa">
@@ -28,16 +28,21 @@
         </form>
         <i class="fas fa-search" ></i>
         <div class="iconosDesktop">
-        <i class="fas fa-portrait"></i>
-        <i class="fas fa-shopping-cart"></i>
+            <a href="/login"><i id="links" class="fas fa-portrait"></i></a>
+            <a href="/carrito"><i id="links"  class="fas fa-shopping-cart"></i></a>
         </div>
     </div> 
     
     <div class="desktop">
-        <a href=""><h2>Home</h2></a>
-        <a href=""><h2>Categoria 1</h2></a>
-        <a href=""><h2>Categoria 2</h2></a>
-        <a href=""><h2>Categoria 3</h2></a>
+
+        <a class="barra-de-cate" href="/"><h2>Home</h2></a>
+        <a class="barra-de-cate" href=""><h2>Categoria 1</h2></a>
+        <a class="barra-de-cate" href=""><h2>Categoria 2</h2></a>
+        <a class="barra-de-cate" href=""><h2>Categoria 3</h2></a>
+
+    </div>
+    <div class="menu">
+        <i class="fas fa-bars"></i>
     </div>
 </header>
 <body>
@@ -45,7 +50,7 @@
      <section>
     <article>
         <div class="carrouselDeImagenes">
-        <img src="../images/vodka.jpg" alt="carrouselDeImagenes">
+            <a href="/detalle"><img  id="quilmes" src="./images/thumb_61391_default_big.jpeg"></a>
         </div>
     </article>
 
@@ -77,7 +82,6 @@
             </div>
         </div>
         </div>
-
         <div class="div-padre">
       <img src="..\images\coronaCerveza.jpg" alt="cerveza">
       <div class="div-hijo">
@@ -118,6 +122,8 @@
     <i class="fas fa-shield-alt"></i>
     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 </div>
-</footer>  
+
+</footer> 
+ 
 </body>
 </html>

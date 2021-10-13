@@ -113,4 +113,13 @@ input{
     .fa-search:before{
         padding-left: 10px;
     }
+     footer{
+        display: flex;
+        margin-top: 60px;
+        background-color: black;
+
+    }
+    .textoFooter i{
+        font-size: 50px;
+    }
 }
