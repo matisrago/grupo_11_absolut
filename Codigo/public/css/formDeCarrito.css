@@ -122,5 +122,13 @@ div.subtotal{
     div.subtotal{
         margin-right: 1px;
     }
-    
+     footer{
+        display: flex;
+        margin-top: 60px;
+        background-color: black;
+
+    }
+    .textoFooter i{
+        font-size: 50px;
+    }
 }
