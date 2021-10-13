@@ -55,8 +55,6 @@ header{
     margin: 0px;
 }
 a{
-    background-color: #efdddd;
-}
-a *{
+    color: black;
     background-color: #efdddd;
 }

@@ -32,6 +32,9 @@ main img{
     display: block;
     padding-bottom: 5%;
 }
+#quilmes{
+    width: 160px;
+}
 
 @media(min-width:480px){
     .main-flex{
