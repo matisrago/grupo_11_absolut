@@ -21,6 +21,10 @@
 .iconos{
     display: none;
 }
+#logo{
+    width: 86px;
+    margin-right: 250px;
+}
 @media (min-width:720px){
 
 header{
