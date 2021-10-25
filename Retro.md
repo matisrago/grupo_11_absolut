@@ -11,6 +11,10 @@ Hacer menos: Perder el tiempo en las reuniones y debatir sobre el calentamiento 
 Dejar de hacer: Postergacion de nuestras tareas.
 
 
+
+
+
+
 Retrospectiva Sprint 2:
 
 Comenzar a hacer: mas reuniones por semana.
