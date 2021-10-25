@@ -7,6 +7,9 @@ app.listen(port, () => {
     console.log("Funcionando")
 })
 
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
 app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname,"./views/home.html"))
 })
