@@ -13,4 +13,6 @@ router.get("/carrito",mainController.carrito);
 
 router.get("/login",mainController.carrito)
 
+router.get("/agregar",mainController.creacion)
+
 module.exports= router;
