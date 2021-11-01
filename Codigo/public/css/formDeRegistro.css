@@ -6,6 +6,9 @@ body {
     padding: 0;
 
 }
+main{
+    text-align: -webkit-center;
+}
 .titulo{
     font-family: 'Monoton', cursive;
     font-size: 24px;
@@ -116,7 +119,6 @@ input{
      footer{
         display: flex;
         margin-top: 60px;
-        background-color: black;
 
     }
     .textoFooter i{

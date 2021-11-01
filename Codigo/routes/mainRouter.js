@@ -11,7 +11,7 @@ router.get("/formulario",mainController.registro);
 
 router.get("/carrito",mainController.carrito);
 
-router.get("/login",mainController.carrito)
+router.get("/login",mainController.login)
 
 router.get("/agregar",mainController.creacion)
 

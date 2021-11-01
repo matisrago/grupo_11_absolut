@@ -1,40 +1,8 @@
 <!DOCTYPE html>
-<head>
-    <meta name = "viewport" content="width=device-width, initial-scale=1">
-    <link rel = "stylesheet" href="./css/detalleProducto.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel = "stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-</head>
+<%- include('../views/partials/head') %> 
+<link rel = "stylesheet" href="./css/detalleProducto.css">
 <body>
-    <header>
-        <div class="iconos">
-            <a href="/"><i class="fas fa-arrow-left"></i></a>
-            <a href=""><i id="carro" class="fas fa-shopping-cart"></i></a>
-        </div>
-        <div class="desktop lupa">
-            <img id="logo" src="../images/logo-proyectoV2.jpg" alt="logo" >
-                <form action="/resultado-busqueda">    
-                    <label for="search-bar">
-                    <input type="text" name="search-bar" id="search-bar" placeholder="busqueda..."> <p id="busqueda"></p>
-                    
-                </label>
-            </form>
-            <i class="fas fa-search" ></i>
-            <div class="iconosDesktop">
-            <a  href="/login"><i id="links" class="fas fa-portrait"></i></a>
-            <a  href="/carrito"><i id="links"  class="fas fa-shopping-cart"></i></a>
-            </div>
-        </div>  
-        <div class="desktop">
-            <a class="barra-de-cate" href="/"><h2>Home</h2></a>
-            <a class="barra-de-cate" href=""><h2>Categoria 1</h2></a>
-            <a class="barra-de-cate" href=""><h2>Categoria 2</h2></a>
-            <a class="barra-de-cate" href=""><h2>Categoria 3</h2></a>
-    
-        </div>
-    </header>
+    <%- include('../views/partials/header') %> 
     <main>
     <div class="producto">
     <img id="imagen" src="./images/thumb_61391_default_big.jpeg">
@@ -59,17 +27,4 @@
     </div>
     </main>
 </body>
-<footer>
-    <div class=textoFooter>
-    <i class="fas fa-credit-card"></i>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-</div>
-<div class="textoFooter">
-    <i class="fas fa-truck"></i>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-</div>
-<div class="textoFooter">
-    <i class="fas fa-shield-alt"></i>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-</div>
-</footer>
+<%- include('../views/partials/footer') %> 
