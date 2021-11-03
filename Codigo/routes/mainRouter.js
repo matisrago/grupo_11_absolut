@@ -15,4 +15,6 @@ router.get("/login",mainController.login)
 
 router.get("/agregar",mainController.creacion)
 
+router.get("/editar",mainController.edicion)
+
 module.exports= router;
