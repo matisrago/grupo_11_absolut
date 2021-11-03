@@ -1,24 +1,11 @@
 *{
-    background-color: #ffe4c4;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
-.iconos {
-    display: flex;
-    gap: 90%;
-}
-.iconosDesktop{
-    display: none;
-}
-#logo{
-    display: none;
-}
 body{
     text-align: center;
-   
-}
-.desktop{
-    display: none;
    
 }
 
@@ -67,15 +54,6 @@ footer{
         position: absolute;
         right: 20px;
         }
-    #logo{
-        display: flex;
-        width: 50px;
-        height: auto;
-        position:absolute;
-        left: 10px;
-        top: 10px;
-
-    }
     #search-bar{
         display: flex;
         width: 250px;
@@ -84,7 +62,7 @@ footer{
         background-color: #ffe4c4;
     }
     .desktop.lupa {
-        display: flex;
+        display: none;
         padding-top:30px ;
         width: 100%;
         align-content: center;
@@ -92,18 +70,12 @@ footer{
         justify-content: center;
         
     }
-    .desktop{ 
-        display: flex;
-        justify-content: space-between;
-        background-color: #efdddd;
-        margin: 0px;
-    }
+    
     a{
-        background-color: #efdddd;
+    color: white;
+    text-decoration: none;
     }
-    a *{
-        background-color: #efdddd;
-    }
+
     img:hover{
         box-shadow: 2px 2px black;
     }

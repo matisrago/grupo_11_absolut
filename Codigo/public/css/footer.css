@@ -1,5 +1,5 @@
 footer{
-    background-color: #efdddd;
+    background-color: black;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
     display: none;
@@ -12,6 +12,9 @@ footer{
     margin-top: 60px;
     text-align: center;
 
+}
+.textoFooter{
+    color: white;
 }
 .textoFooter i{
     font-size: 50px;

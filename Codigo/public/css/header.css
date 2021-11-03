@@ -49,40 +49,12 @@ header{
 }
 div.busqueda-burger{
     display: flex;
-@media  (min-width: 720px){
-    .iconos{
-        display: none;
-    }
-    .iconosDesktop{
-        display: flex;
-        position: relative;
-        right: 20px;
-        }
-    #logo{
-        display: flex;
-        width: 50px;
-        height: auto;
-        position:absolute;
-        left: 10px;
-        top: 10px;
-
-    }
-    #search-bar{
-        display: flex;
-        width: 250px;
-    }
-    
 }
-
-
 
 @media (min-width:720px){
 
 header{
     text-align: center;
-}
-.menu{
-    display: none;
 }
 .iconosDesktop{
     display: flex;
@@ -91,15 +63,12 @@ header{
     height: 20px;
     width: 20px;
     }
-#logo{
-    display: flex;
-    width: 50px;
-    height: auto;
-    position:absolute;
-    left: 10px;
-    top: 10px;
-
-}
+    #logo{
+        border:none;
+        transition: none;
+    box-shadow: none;
+    top: 3px;
+    }
 #search-bar{
     display: flex;
     width: 250px;
@@ -121,11 +90,11 @@ header{
 .desktop{ 
     display: flex;
     justify-content: space-between;
-    background-color: #efdddd;
+    background-color: black;
     margin: 0px;
 }
 a{
-    color: black;
-    background-color: #efdddd;
+    color: white;
+    text-decoration: none;
 }
-}}
+}
