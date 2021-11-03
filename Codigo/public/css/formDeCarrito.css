@@ -12,6 +12,7 @@ body{
 p {
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
+    color: white;
 }
 
 
@@ -126,7 +127,7 @@ div.subtotal{
      footer{
         display: flex;
         margin-top: 60px;
-        background-color: black;
+    
 
     }
     .textoFooter i{

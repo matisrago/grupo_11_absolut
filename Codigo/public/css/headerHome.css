@@ -78,10 +78,6 @@ header{
     top: 10px;
 
 }
-#search-bar{
-    display: flex;
-    width: 250px;
-}
 
 .desktop.lupa {
     display: flex;
