@@ -3,8 +3,10 @@
     font-family: 'PT Sans', sans-serif;
    
 }
+
 header{
     text-align: center;
+    background-color: black;
 }
 .iconos {
     display: flex;
@@ -20,6 +22,7 @@ header{
     display: none;
     
 }
+
 @media  (min-width: 720px){
     .iconos{
         display: none;

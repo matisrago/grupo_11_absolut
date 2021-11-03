@@ -1,5 +1,5 @@
 *{
-    
+    margin: 0%;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
    
@@ -8,9 +8,11 @@
     display: none;
 }
 .menu{
-    display: block;
-    text-align: center;
-    font-size: 20px;
+    padding: 12px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 .iconosDesktop{
     display: none;
@@ -22,9 +24,36 @@
     display: none;
 }
 #logo{
-    width: 86px;
-    margin-right: 250px;
+    width: 150px;
+    
 }
+header{
+    
+    background-color: rgb(0, 0, 0);
+}
+#burgermenu{
+    font-size: 25px;
+    color: white;
+    
+}
+#carrito{
+   
+    color: white;
+    font-size: 25px;
+}
+
+#lupa{
+    font-size: 25px;
+    color:white;
+    margin-right: 27px;
+}
+div.busqueda-burger{
+    display: flex;
+    
+}
+
+
+
 @media (min-width:720px){
 
 header{

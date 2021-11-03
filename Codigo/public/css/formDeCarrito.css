@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 * {
-    
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 body{

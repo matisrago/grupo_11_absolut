@@ -21,10 +21,10 @@ Comenzar a hacer: mas reuniones por semana.
 
 Hacer mas: hacer bien los dailys.
 
-Continuar haciendo: seguir haciendo las demos, seguir manejando el sprint , seguir cumpliendo la tarea y la entrega en tiempo y forma.
+Continuar haciendo: seguir manejando el sprint de la misma manera y asi poder seguir cumpliendo la tarea y la entrega en tiempo y forma.
 
-Hacer menos: 
+Hacer menos: Hacer menos commits inecesarios.
 
-Dejar de hacer: .
+Dejar de hacer: Dejar de prosponer reuniones.
 
 

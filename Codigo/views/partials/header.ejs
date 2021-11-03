@@ -4,14 +4,18 @@
     </div>
     
     <div class="desktop lupa">
-        <img id="logo" src="../images/logo-proyectoV2.jpg" alt="logo" >
-            <form action="/resultado-busqueda">    
-                <label for="search-bar">
-                <input type="text" name="search-bar" id="search-bar" placeholder="busqueda..."> <p id="busqueda"></p>
-                
-            </label>
-        </form>
-        <i class="fas fa-search" ></i>
+        <img id="logo" src="../images/para_eue.png" alt="logo" >
+            <div class="buscar">
+                <form action="/resultado-busqueda">    
+                    <label for="search-bar">
+                        <input  type="text" class="buscar_texto" name="search-bar" id="search-bar" placeholder="busqueda..." > 
+                        <a href="" class="boton">
+                         <i id="lupa-" class="fas fa-search" ></i>
+                        </a>
+                    </label>
+                </form>
+            </div>
+        
         <div class="iconosDesktop">
 
             <a href="/login"><i id="links" class="fas fa-portrait"></i></a>
@@ -19,6 +23,7 @@
 
         </div>
     </div> 
+    
     
     <div class="desktop">
 
@@ -29,9 +34,24 @@
 
     </div>
     <div class="menu">
-        <img id="logo" src="../images/logo-proyectoV2.jpg" alt="logo" >
-        <i class="fas fa-bars"></i>
+        <div>
+            <i id="burgermenu" class="fas fa-bars"></i>
+        </div>
 
-
+        <div>
+            <img id="logo" src="../images/para_eue.png" alt="logo" >
+        </div>
+        <div class="busqueda-burger">
+            <div>
+                <i id="lupa" class="fas fa-search"  ></i>
+            </div>
+            <div>
+                <i id="carrito" class="fas fa-shopping-cart"></i>
+            </div>
+            
+        </div>
+        
     </div>
+    
+   
 </header>
