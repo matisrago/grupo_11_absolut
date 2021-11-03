@@ -8,9 +8,11 @@ footer{
     
 
 footer{
+    
     display: flex;
     margin-top: 60px;
     text-align: center;
+    
 
 }
 .textoFooter{

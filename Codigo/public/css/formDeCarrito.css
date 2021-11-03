@@ -5,14 +5,14 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #ffe4c4;
+    background-color: white;
     font-family: 'Monoton', cursive;
 }
 
 p {
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
-    color: white;
+    
 }
 
 
@@ -124,13 +124,6 @@ div.subtotal{
     div.subtotal{
         margin-right: 1px;
     }
-     footer{
-        display: flex;
-        margin-top: 60px;
+     
     
-
-    }
-    .textoFooter i{
-        font-size: 50px;
-    }
 }
