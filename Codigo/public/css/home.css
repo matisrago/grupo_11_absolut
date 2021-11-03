@@ -3,15 +3,19 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #FFE4C4;
+    
+    
 }
 
 
 
 #h3-text{
-    padding-left: 3%;
+    color: white;
+    text-align: center;
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
+    display: block;
+    
 }
 .carrouselDeImagenes{
     padding-top: 5%;
@@ -22,18 +26,84 @@ body{
     flex-direction: column;
 }
 .div-padre{
+    background-color: white;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom: 10px;
     padding-bottom: 10px;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 5px;
 }
 .div-hijo{
     text-align: center;
 }
 main img{
+    width: 200px;
     margin: auto;
     display: block;
     padding-bottom: 5%;
 }
 #quilmes{
     width: 160px;
+}
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 600%;
+
+    animation: cambio 20s infinite alternate linear ;
+    
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+div.a-carrito{
+    padding-top: 4px ;
+    padding-bottom: 4px;
+    margin: auto ;
+    width: 80%;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    border-radius: 5px;
+    font-weight: 700;
+}
+#agregar-carrito{
+    text-decoration: none;
+    color: #39b54a ;
+}
+.slider2{
+    display: none;
+}
+@keyframes cambio {
+    0% { margin-left: 0;}
+    15% { margin-left: 0;}
+
+    20% { margin-left: -100%;}
+    35% { margin-left: -100%;}
+
+    40% { margin-left: -200%;}
+    55% { margin-left: -200%;}
+
+    60% { margin-left: -300%;}
+    65% { margin-left: -300%;}
+
+    70% { margin-left: -400%;}
+    85% { margin-left: -400%;}
+    
+    90% { margin-left: -500%;}
+    100% { margin-left: -500%;}
+
+
+    
 }
 
 @media(min-width:480px){
@@ -48,7 +118,7 @@ main img{
 @media(min-width:720px){
     .main-flex{
     max-width: 98%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     }
     main section article img{
@@ -65,5 +135,12 @@ main img{
         color: black;
         background-color: #FFE4C4;
     }
+    .slider{
+        display: none;
+    }
+    .slider2{
+        display: none;
+    }
+
 
 }
