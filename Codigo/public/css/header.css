@@ -1,35 +1,61 @@
 *{
+    margin: 0%;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
    
 }
-
-header{
-    text-align: center;
-    background-color: black;
+.desktop{
+    display: none;
 }
-.iconos {
+.menu{
+    padding: 12px 20px;
     display: flex;
-    gap: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 .iconosDesktop{
     display: none;
+    }
+#links{
+    display: none;
+}
+.iconos{
+    display: none;
 }
 #logo{
-    display: none;
-}
-.desktop{
-    display: none;
+    width: 150px;
     
 }
+header{
+    
+    background-color: rgb(0, 0, 0);
+}
+#burgermenu{
+    font-size: 25px;
+    color: white;
+    
+}
+#carrito{
+   
+    color: white;
+    font-size: 25px;
+}
 
+#lupa{
+    font-size: 25px;
+    color:white;
+    margin-right: 27px;
+}
+div.busqueda-burger{
+    display: flex;
 @media  (min-width: 720px){
     .iconos{
         display: none;
     }
     .iconosDesktop{
         display: flex;
-        position: absolute;
+        position: relative;
         right: 20px;
         }
     #logo{
@@ -46,30 +72,60 @@ header{
         width: 250px;
     }
     
-    .desktop.lupa {
-        display: flex;
-        padding-top:30px ;
-        width: 100%;
-        align-content: center;
-        background-color: #ffe4c4;
-        justify-content: center;
-        
-    }
-    .desktop{ 
-        display: flex;
-        justify-content: space-between;
-        background-color: #efdddd;
-        margin: 0px;
-    }
-
-    a.barra-de-cate{
-        background-color: #efdddd;
-    }
-   
-    #links{
-         color: black;
-    }
-    a{
-        color: black;
-    }
 }
+
+
+
+@media (min-width:720px){
+
+header{
+    text-align: center;
+}
+.menu{
+    display: none;
+}
+.iconosDesktop{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    }
+#logo{
+    display: flex;
+    width: 50px;
+    height: auto;
+    position:absolute;
+    left: 10px;
+    top: 10px;
+
+}
+#search-bar{
+    display: flex;
+    width: 250px;
+}
+
+.desktop.lupa {
+    display: flex;
+    padding-top:30px ;
+    width: 100%;
+    align-content: center;
+    background-color: #ffe4c4;
+    justify-content: center;
+    
+}
+#links{
+    display: flex;
+    background-color: #ffe4c4;
+}
+.desktop{ 
+    display: flex;
+    justify-content: space-between;
+    background-color: #efdddd;
+    margin: 0px;
+}
+a{
+    color: black;
+    background-color: #efdddd;
+}
+}}
