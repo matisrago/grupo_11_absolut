@@ -2,15 +2,12 @@
     font-family: 'PT Sans', sans-serif;
     box-sizing: border-box;
 }
-body{
-    
-    
-}
+
 
 
 
 #h3-text{
-    color: white;
+    color: black;
     text-align: center;
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
@@ -80,7 +77,7 @@ div.a-carrito{
     text-decoration: none;
     color: #39b54a ;
 }
-.slider2{
+.sliderDesktop{
     display: none;
 }
 @keyframes cambio {
@@ -138,8 +135,26 @@ div.a-carrito{
     .slider{
         display: none;
     }
-    .slider2{
-        display: none;
+    .sliderDesktop{
+        display: block;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .sliderDesktop ul{
+        display: flex;
+        padding: 0;
+        width: 600%;
+    
+        animation: cambio 20s infinite alternate linear ;
+        
+    }
+    .sliderDesktop li{
+        width: 100%;
+        list-style: none;
+    }
+    .sliderDesktop img{
+        width: 100%;
     }
 
 

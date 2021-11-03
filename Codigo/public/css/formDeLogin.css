@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 * {
-    background-color: #ffe4c4;
+
     box-sizing: border-box;
     margin: 0;
 }
 
 body {
+    background-color: black;
     font-family: 'monoton';
 }
 
 .form-login {
     width: 400px;
     height: 340px;
-    background: #FFE4C4;
     margin: auto;
     margin-top: 180px;
-    box-shadow: 7px 13px 37px #FFE4C4;
+    box-shadow: 7px 13px 37px white;
     padding: 30px 40px;
-    color: #272626;
+    color: white;
 }
 
 .form-login h5 {
@@ -61,7 +61,7 @@ body {
 }
 
 .form-login a {
-    color: #0000009d;
+    color: white;
     text-decoration: none;
     font-size: 14px;
 }

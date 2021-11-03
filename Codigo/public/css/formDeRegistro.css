@@ -68,11 +68,7 @@ input{
         justify-content: space-between;
     }
 
-    .desktop{
-        display:flex;
-        justify-content: space-between;
-        background-color: #efdddd;
-    }
+
     #search-bar{
         width: 250px;
     }
