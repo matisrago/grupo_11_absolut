@@ -28,3 +28,17 @@ Hacer menos: Hacer menos commits inecesarios.
 Dejar de hacer: Dejar de prosponer reuniones.
 
 
+
+
+Retrospectiva Sprint 3:
+
+Comenzar a hacer: mensajes especificos en cada commit
+
+Hacer mas: codear en grupo
+
+Continuar haciendo: reuniones semanales 
+
+Hacer menos: 
+
+Dejar de hacer: 
+
