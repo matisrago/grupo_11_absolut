@@ -6,7 +6,7 @@
 
 
 
-#h3-text{
+.h3-text{
     color: black;
     text-align: center;
     font-family: 'PT Sans', sans-serif;
@@ -23,7 +23,6 @@
     flex-direction: column;
 }
 .div-padre{
-    background-color: white;
     margin-left:50px;
     margin-right:50px;
     margin-bottom: 10px;

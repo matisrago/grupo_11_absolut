@@ -7,9 +7,9 @@
     <div class="producto">
     <img id="imagen" src="./images/thumb_61391_default_big.jpeg">
     <div class="datos">
-    <h2 id="nombreProducto">Cerveza Quilmes</h2>
-    <h4 id= "descripcion">Cerveza quilmes sabor clasico 340ml</h4>
-    <h5 id="precio">$220</h5>
+    <h2 id="nombreProducto"><%= productsDetails.name %> </h2>
+    <h4 id= "descripcion"><%= productsDetails.description %> </h4>
+    <h5 id="precio"> $ <%= productsDetails.price %> </h5>
     </div>
     <section id="botones">
     <form action="detalleProducto">

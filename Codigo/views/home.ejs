@@ -35,71 +35,59 @@
     <article>
         <br> <br>
         <div class="box-h3">
-          <h3 id="h3-text">PRODUCTOS DESTACADOS</h3> 
+          <h3 class="h3-text">PRODUCTOS DESTACADOS</h3> 
         </div>
       <div class="main-flex">
+        <% productsDestacado.forEach(prod =>{ %> 
         <div class="div-padre">
-            <img src="../images/champagne.jpg" alt="champagne">
+          <a href="products/<%= prod.id %>">
+            <img src="<%=prod.images%>" alt="<%= prod.name %> ">
+          </a>
             <div class="div-hijo">
                 <div class="precio-descuento">
-                    <p class = "precios">$2.000</p> 
+                    <p class = "precios"><%= prod.price %> </p> 
                     <p class = "descuentos">5% OFF</p>
                 </div>
                 <div class = "descripciones">
-                    <p class = "descripcion"><strong>Champagne</strong></p>
+                    <p class = "descripcion"><strong><%= prod.name %> </strong></p>
                     <div class="a-carrito">
                       <a id="agregar-carrito" href=""> Agregar al carrito</a>
                     </div>
-                </div>
+                </div>  
             </div>
         </div>
-        <div class="div-padre">
-        <img src="../images/gin.jpg" alt="gin">
-            <div class="div-hijo">
-                <div class="precio-descuento">
-                  <div>
-                    <p class = "precios">$2.500</p> 
-                    </div>
-                    <p class = "descuentos">10% OFF</p>
-                     </div>
-                    <div class = "descripciones">
-                    <p class = "descripcion"><strong>Gin Bombay Sapphire</strong></p>
-                    <div class="a-carrito">
-                      <a id="agregar-carrito" href=""> Agregar al carrito</a>
-                    </div>
-            </div>
-        </div>
-        </div>
-        <div class="div-padre">
-        <img src="..\images\coronaCerveza.jpg" alt="cerveza">
-        <div class="div-hijo">
-        <div class="precio-descuento">
-            <p class = "precios">$150</p> 
-            <p class = "descuentos">6% OFF</p>
-            <div class = "descripciones">
-            <p class = "descripcion"><strong>Cerveza Corona</strong></p>
-            <div class="a-carrito">
-              <a id="agregar-carrito" href=""> Agregar al carrito</a>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="div-padre">
-       <img src="../images/fernet.jpg" alt="fernet">
-        <div class="div-hijo">
-        <div class="precio-descuento">
-            <p class = "precios">$750</p> 
-            <p class = "descuentos">5% OFF</p>
-             </div>
-            <div class = "descripciones">
-            <p class = "descripcion"><strong>Fernet Branca</strong></p>
-            <div class="a-carrito">
-              <a id="agregar-carrito" href=""> Agregar al carrito</a>
-            </div>
-        </div>
+        <% }) %>
+      </div>
+
+
+      <br><br><br>
+
+
+      <div class="box-h3">
+        <h3 class="h3-text">PRODUCTOS EN OFERTA</h3> 
+      </div>
+    <div class="main-flex">
+      <% productsOfertas.forEach(prod =>{ %> 
+        
+      <div class="div-padre">
+        <a href="products/<%= prod.id %>">
+          <img src="<%=prod.images%>" alt="<%= prod.name %> ">
+        </a>
+          <div class="div-hijo">
+              <div class="precio-descuento">
+                  <p class = "precios"><%= prod.price %> </p> 
+                  <p class = "descuentos">5% OFF</p>
+              </div>
+              <div class = "descripciones">
+                  <p class = "descripcion"><strong><%= prod.name %> </strong></p>
+                  <div class="a-carrito">
+                    <a id="agregar-carrito" href=""> Agregar al carrito</a>
+                  </div>
+              </div>  
           </div>
-        </div>
+      </div>
+      <% }) %>
+    </div>
     </article>
      </section>
  </main>
