@@ -12,7 +12,7 @@
   "name": "andes",
   "description": "cerveza andes",
   "price": 175.58,
-  "image": "../images/andes.jpeg",
+  "image": "../images/andes.jpg",
   "category": "destacado"
  },
  {
@@ -20,7 +20,7 @@
   "name": "aperol",
   "description": "aperol",
   "price": 2712.6,
-  "image": "../images/aperol.png",
+  "image": "../images/aperol.jpg",
   "category": "oferta"
  },
  {
@@ -36,7 +36,7 @@
   "name": "chandon",
   "description": "chandon",
   "price": 1573.34,
-  "image": "../images/chandon.jpeg",
+  "image": "../images/chandon.jpg",
   "category": "oferta"
  },
  {
@@ -69,7 +69,7 @@
   "name": "luigi bosca",
   "description": "vino luigi bosca",
   "price": 1076.12,
-  "image": "../images/luigibosca.jpeg",
+  "image": "../images/luigiBosca.jpg",
   "category": "destacado"
  },
  {
@@ -77,7 +77,7 @@
   "name": "jack daniels",
   "description": "jack daniels whisky",
   "price": 4646.24,
-  "image": "../images/jack.jpeg",
+  "image": "../images/jackDaniels.jpg",
   "category": "oferta"
  },
  {
