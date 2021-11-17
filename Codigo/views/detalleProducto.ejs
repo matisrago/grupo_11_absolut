@@ -12,7 +12,7 @@
     <h5 id="precio"> $ <%= productsDetails.price %> </h5>
     </div>
     <section id="botones">
-    <form action="detalleProducto">
+  
 
         
 
@@ -21,6 +21,8 @@
     <button type="button">Agregar al carrito</button>
     <a href="/<%= productsDetails.id%>/editar ">
     <button type="button">Editar producto</button></a>
+    <form action="/<%=productsDetails.id%>?_method=DELETE"  method="POST">
+    <button type="submit">Eliminar Producto</button>
     </form>
 </section>
     </div>

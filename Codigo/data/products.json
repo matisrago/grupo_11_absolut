@@ -42,10 +42,11 @@
  {
   "id": "6",
   "name": "chivas",
-  "description": "chivas whisky",
-  "price": 1298.39,
+  "description": "Wiski",
+  "price": 800,
   "image": "../images/chivas.jpg",
-  "category": "destacado"
+  "category": "destacado",
+  "discount": 5
  },
  {
   "id": "7",
@@ -54,14 +55,6 @@
   "price": 75.31,
   "image": "../images/coronaCerveza.jpg",
   "category": "oferta"
- },
- {
-  "id": "8",
-  "name": "martini rosso",
-  "description": "martini rosso",
-  "price": 3061.94,
-  "image": "../images/martini.jpg",
-  "category": "destacado"
  },
  {
   "id": "9",
@@ -111,5 +104,4 @@
   "image": "../images/merle.jpg",
   "category": "destacado"
  }
- 
 ]
