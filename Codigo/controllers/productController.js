@@ -8,6 +8,18 @@ const productController = {
 	detalle: (req, res) => {
 		const productsDetails = products.find(prod=> prod.id == req.params.id)
 		res.render('detalleProducto',{productsDetails})
-	}}
+	},
+	crear: (req,res ) => {
+		res.render('edicionProducto')
+	},
+	agregar: (req,res ) => {
+		res.render('creacionProducto')
+	},
+	store: (req,res) => {
+		res.render
+	}
+}
+
+
 
     module.exports = productController;

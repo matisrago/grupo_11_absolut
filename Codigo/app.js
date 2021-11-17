@@ -15,5 +15,5 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 
 app.use("/",rutasMain)
-app.use("/products", rutasProducts);
+app.use("/", rutasProducts);
 
