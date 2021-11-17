@@ -28,7 +28,7 @@ const mainController = {
     },
     store: (req,res) => {
 		const nuevoProducto = req.body;
-
+    
         nuevoProducto.id = products[products.length-1].id + 1;
 
         products.push(nuevoProducto);
