@@ -41,7 +41,7 @@
         <% productsDestacado.forEach(prod =>{ %> 
         <div class="div-padre">
           <a href="products/<%= prod.id %>">
-            <img src="<%=prod.images%>" alt="<%= prod.name %> ">
+            <img src="<%= prod.image %>" alt="<%= prod.name %> ">
           </a>
             <div class="div-hijo">
                 <div class="precio-descuento">
@@ -71,7 +71,7 @@
         
       <div class="div-padre">
         <a href="products/<%= prod.id %>">
-          <img src="<%=prod.images%>" alt="<%= prod.name %> ">
+          <img src="<%=prod.image%>" alt="<%= prod.name %> ">
         </a>
           <div class="div-hijo">
               <div class="precio-descuento">
