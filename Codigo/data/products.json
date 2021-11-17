@@ -1,14 +1,115 @@
-[{"id":"1","name":"absolut","description":"vodka absolut","price":3701.27,"image":"../images/absolut.jpeg","category": "oferta"},
-{"id":"2","name":"andes","description":"cerveza andes","price":175.58,"image":"../images/andes.jpeg","category": "destacado"},
-{"id":"3","name":"aperol","description":"aperol","price":2712.6,"image":"../images/aperol.png","category": "oferta"},
-{"id":"4","name":"champagne","description":"champagne","price":628.44,"image":"../images/champagne.jpg","category": "destacado"},
-{"id":"5","name":"chandon","description":"chandon","price":1573.34,"image":"../images/chandon.jpeg","category": "oferta"},
-{"id":"6","name":"chivas","description":"chivas whisky","price":1298.39,"image":"../images/chivas.jpg","category": "destacado"},
-{"id":"7","name":"corona","description":"cerveza corona","price":75.31,"image":"../images/coronaCerveza.jpg","category": "oferta"},
-{"id":"8","name":"martini rosso","description":"martini rosso","price":3061.94,"image":"../images/martini.jpg","category": "destacado"},
-{"id":"9","name":"fernet","description":"fernet branca","price":3303.94,"image":"../images/fernet.jpg","category": "oferta"},
-{"id":"10","name":"luigi bosca","description":"vino luigi bosca","price":1076.12,"image":"../images/luigibosca.jpeg","category": "destacado"},
-{"id":"11","name":"jack daniels","description":"jack daniels whisky","price":4646.24,"image":"../images/jack.jpeg","category": "oferta"},
-{"id":"12","name":"bombay saphyre","description":"gin bombay","price":3109.92,"image":"../images/gin.jpg","category": "destacado"},
-{"id":"13","name":"smirnoff","description":"vodka","price":4942.49,"image":"../images/vodka.jpg","category": "oferta"},
-{"id":"14","name":"merle gin","description":"gin merle","price":1738.94,"image":"../images/merle.jpg","category": "destacado"}]
+[
+ {
+  "id": "1",
+  "name": "absolut",
+  "description": "vodka absolut",
+  "price": 3701.27,
+  "image": "../images/absolut.jpeg",
+  "category": "oferta"
+ },
+ {
+  "id": "2",
+  "name": "andes",
+  "description": "cerveza andes",
+  "price": 175.58,
+  "image": "../images/andes.jpeg",
+  "category": "destacado"
+ },
+ {
+  "id": "3",
+  "name": "aperol",
+  "description": "aperol",
+  "price": 2712.6,
+  "image": "../images/aperol.png",
+  "category": "oferta"
+ },
+ {
+  "id": "4",
+  "name": "champagne",
+  "description": "champagne",
+  "price": 628.44,
+  "image": "../images/champagne.jpg",
+  "category": "destacado"
+ },
+ {
+  "id": "5",
+  "name": "chandon",
+  "description": "chandon",
+  "price": 1573.34,
+  "image": "../images/chandon.jpeg",
+  "category": "oferta"
+ },
+ {
+  "id": "6",
+  "name": "chivas",
+  "description": "chivas whisky",
+  "price": 1298.39,
+  "image": "../images/chivas.jpg",
+  "category": "destacado"
+ },
+ {
+  "id": "7",
+  "name": "corona",
+  "description": "cerveza corona",
+  "price": 75.31,
+  "image": "../images/coronaCerveza.jpg",
+  "category": "oferta"
+ },
+ {
+  "id": "8",
+  "name": "martini rosso",
+  "description": "martini rosso",
+  "price": 3061.94,
+  "image": "../images/martini.jpg",
+  "category": "destacado"
+ },
+ {
+  "id": "9",
+  "name": "fernet",
+  "description": "fernet branca",
+  "price": 3303.94,
+  "image": "../images/fernet.jpg",
+  "category": "oferta"
+ },
+ {
+  "id": "10",
+  "name": "luigi bosca",
+  "description": "vino luigi bosca",
+  "price": 1076.12,
+  "image": "../images/luigibosca.jpeg",
+  "category": "destacado"
+ },
+ {
+  "id": "11",
+  "name": "jack daniels",
+  "description": "jack daniels whisky",
+  "price": 4646.24,
+  "image": "../images/jack.jpeg",
+  "category": "oferta"
+ },
+ {
+  "id": "12",
+  "name": "bombay saphyre",
+  "description": "gin bombay",
+  "price": 3109.92,
+  "image": "../images/gin.jpg",
+  "category": "destacado"
+ },
+ {
+  "id": "13",
+  "name": "smirnoff",
+  "description": "vodka",
+  "price": 4942.49,
+  "image": "../images/vodka.jpg",
+  "category": "oferta"
+ },
+ {
+  "id": "14",
+  "name": "merle gin",
+  "description": "gin merle",
+  "price": 1738.94,
+  "image": "../images/merle.jpg",
+  "category": "destacado"
+ }
+ 
+]

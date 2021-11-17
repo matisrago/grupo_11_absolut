@@ -14,11 +14,8 @@ const productController = {
 	},
 	agregar: (req,res ) => {
 		res.render('creacionProducto')
-	},
-	store: (req,res) => {
-		res.render
-	}
-}
+	},}
+	
 
 
 

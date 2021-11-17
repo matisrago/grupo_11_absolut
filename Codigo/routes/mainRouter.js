@@ -13,7 +13,11 @@ router.get("/login",mainController.login)
 
 router.get("/agregar",mainController.creacion)
 
+router.post('/agregar', mainController.store )
+
 router.get("/editar",mainController.edicion)
+
+
 
 
 module.exports= router;

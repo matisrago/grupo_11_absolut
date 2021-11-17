@@ -25,7 +25,20 @@ const mainController = {
     },
     edicion:(req,res)=>{
         res.render("edicionProducto")
-    }
+    },
+    store: (req,res) => {
+		const nuevoProducto = req.body;
+
+        nuevoProducto.id = products[products.length-1].id + 1;
+
+        products.push(nuevoProducto);
+
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null," "));
+
+        
+        res.redirect('/');
+	}
 }
+
 
 module.exports= mainController;
