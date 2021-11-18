@@ -66,11 +66,12 @@
  },
  {
   "id": "10",
-  "name": "luigi bosca",
-  "description": "vino luigi bosca",
-  "price": 1076.12,
+  "name": "Luigi Bosca",
+  "description": "Alto vino el Luigi Bosca",
+  "price": 1700,
   "image": "../images/luigiBosca.jpg",
-  "category": "destacado"
+  "category": "in-sale",
+  "discount": 5
  },
  {
   "id": "11",
