@@ -38,7 +38,7 @@ Hacer mas: codear en grupo
 
 Continuar haciendo: reuniones semanales 
 
-Hacer menos: 
+Hacer menos: commits con nombres que no se entiendan
 
-Dejar de hacer: 
+Dejar de hacer: Las cosas a ultimo momento
 
