@@ -42,11 +42,16 @@ Hacer menos: commits con nombres que no se entiendan
 
 Dejar de hacer: Las cosas a ultimo momento
 
+
+
+
 Retrospectiva Sprint 4:
 
 Comenzar a hacer:  reuniones mas objetivas 
 
 Continuar haciendo: Seguir Codeando en grupo
 
-Hacer menos:  
+Hacer menos: Commits largos
+
+Dejar de hacer: dejar de hacer las cosas a ultimo momento V.2
 
