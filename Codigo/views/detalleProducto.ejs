@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <%- include('../views/partials/head') %> 
-<link rel = "stylesheet" href="./css/detalleProducto.css">
+<link rel = "stylesheet" href="/css/detalleProducto.css">
 <body>
     <%- include('../views/partials/header') %> 
     <main>
     <div class="producto">
+    <% if(productsDetails != undefined){ %> 
     <img id="imagen" src="<%= productsDetails.image %> ">
     <div class="datos">
     <h2 id="nombreProducto"><%= productsDetails.name %> </h2>
     <h4 id= "descripcion"><%= productsDetails.description %> </h4>
     <h5 id="precio"> $ <%= productsDetails.price %> </h5>
+    <% } %> 
     </div>
     <section id="botones">
   
@@ -19,18 +21,20 @@
     <button type="button"><i class="fas fa-plus"></i></button><span>15</span><button type="button"><i class="fas fa-minus"></i></button>
 
     <button type="button">Agregar al carrito</button>
-    <a href="/<%= productsDetails.id%>/editar ">
+    <% if(productsDetails != undefined){ %> 
+    <a href="/products/<%= productsDetails.id%>/editar ">
     <button type="button">Editar producto</button></a>
-    <form action="/<%=productsDetails.id%>?_method=DELETE"  method="POST">
+    <form action="/products/<%=productsDetails.id%>?_method=DELETE"  method="POST">
+        <% } %> 
     <button type="submit">Eliminar Producto</button>
     </form>
 </section>
     </div>
     <h3>Productos relacionados</h3>
     <div class="relacionados">
-    <img src="./images/gin.jpg">
-    <img src="./images/vodka.jpg">
-    <img src="./images/champagne.jpg">
+    <img src="/images/gin.jpg">
+    <img src="/images/vodka.jpg">
+    <img src="/images/champagne.jpg">
     </div>
     </main>
 </body>

@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const {check} = require('express-validator')
 
 const mainController = require("../controllers/mainController");
 const loginMiddleWare = require("../middlewares/loginMiddleware");
@@ -11,6 +12,7 @@ router.get("/formulario",mainController.registro);
 router.get("/carrito",mainController.carrito);
 
 router.get("/login",mainController.login)
+router.post("/login", [check('email').isEmail().withMessage('Email invalido')], mainController.processLogin)
 
 router.get("/agregar",mainController.creacion)
 

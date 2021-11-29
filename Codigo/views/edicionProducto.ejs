@@ -17,7 +17,7 @@
                 <br>
                 <div class="input">
                         <div class="row-product-detail">
-                            <form action="/<%=productsDetails.id%>?_method=PUT" method="POST">
+                            <form action="/products/<%=productsDetails.id%>?_method=PUT" method="POST">
                             <div class="input col-md-6">
                                 <label for="name" class="form-label">Nombre del producto
                                 <br>
@@ -38,8 +38,8 @@
                                 <br>
                                 <select name="category" id="category" class="form-input">
                                     <option value="">Elegí</option>
-                                    <option value="in-sale">En oferta</option>
-                                    <option value="visited">Últimos agregados</option></label>
+                                    <option value="oferta">En oferta</option>
+                                    <option value="destacado">Destacado</option></label>
                                 </select>
                             </div>
                             <div class="input">

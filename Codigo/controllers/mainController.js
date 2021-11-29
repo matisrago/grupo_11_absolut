@@ -1,3 +1,4 @@
+const { validationResult } = require('express-validator');
 const fs = require('fs');
 const path = require('path');
 
@@ -16,6 +17,13 @@ const mainController = {
     },
     login: (req, res)=>{
         res.render("formDeLogin")
+    },
+    processLogin: (req,res) =>{
+        let errors = validationResult(req);
+        if(errors.isEmpty()){
+        }else{
+            return res.render('formDeLogin',{errors:errors.errors})
+        }
     },
     users : (req,res)=>{
         res.redirect("/")

@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 var path = require('path');
 const methodOverride =  require('method-override');
-
+const session = require('express-session')
 const rutasMain = require("./routes/mainRouter")
 const rutasProducts = require('./routes/productsRouter')
 
@@ -12,6 +12,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json())
 app.use(methodOverride('_method'));
+app.use(session({secret:'secreto'}));
 app.listen(port, () => {
     console.log("Funcionando")
 })
@@ -20,7 +21,8 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 
 app.use("/",rutasMain)
-app.use("/", rutasProducts);
+app.use("/products", rutasProducts);
+
 
 
 

@@ -40,7 +40,7 @@
       <div class="main-flex">
         <% productsDestacado.forEach(prod =>{ %> 
         <div class="div-padre">
-          <a href="/<%= prod.id %>">
+          <a href="/products/<%= prod.id %>">
             <img src="<%= prod.image %>" alt="<%= prod.name %> ">
           </a>
             <div class="div-hijo">
@@ -70,7 +70,7 @@
       <% productsOfertas.forEach(prod =>{ %> 
         
       <div class="div-padre">
-        <a href="/<%= prod.id %>">
+        <a href="/products/<%= prod.id %>">
           <img src="<%=prod.image%>" alt="<%= prod.name %> ">
         </a>
           <div class="div-hijo">

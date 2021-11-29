@@ -12,7 +12,17 @@
     </head>
     <main>
         <section class="form-login">
-            <form action="/user" method="POST">
+            <% if (typeof errors != "undefined") { %>
+                <p style="color:red">ERROR!</p> 
+                <ul>
+                    <% for (let i=0; i<errors.length;i++){ %> 
+                    <li>
+                        <%= errors[i].msg %> 
+                    </li>
+                </ul>
+                <% } %> 
+                <% }  %> 
+            <form action="/login" method="POST">
             <h5>Login</h5>
             <label for="username">
             <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
