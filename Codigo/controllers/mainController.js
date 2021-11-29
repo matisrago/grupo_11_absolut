@@ -37,6 +37,7 @@ const mainController = {
     edicion:(req,res)=>{
         res.render("edicionProducto")
     },
+    
     store: (req,res) => {
 		const nuevoProducto = req.body;
     

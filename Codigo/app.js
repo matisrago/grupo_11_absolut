@@ -5,7 +5,7 @@ const methodOverride =  require('method-override');
 const session = require('express-session')
 const rutasMain = require("./routes/mainRouter")
 const rutasProducts = require('./routes/productsRouter')
-
+const rutasUsers = require('./routes/userRouter')
 
 const port = 3030
 app.use(express.static("public"));
@@ -22,6 +22,7 @@ app.set('views', path.join(__dirname, '/views'));
 
 app.use("/",rutasMain)
 app.use("/products", rutasProducts);
+app.use('/users',rutasUsers)
 
 
 

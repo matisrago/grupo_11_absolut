@@ -9,7 +9,7 @@
         <h2 class="titulo">NUEVA CUENTA</h2>
         <article>
         
-            <form action="/resultado-registro" method ="POST">
+            <form action="/formulario" method ="POST">
              <div class ="flex-all">  
                 <div class="flex-left">
                 <h4 class="infor">INFORMACION PERSONAL</h4>
@@ -21,7 +21,9 @@
                 </label> <br><br>
             <label for="date"> Edad* <br>
             <input  type="date" name="date" id="date">
-            </label><br><br>
+            </label><br>
+            <input type="file" name = "image" id="file" multiple>
+            br
 
             <label for="conditions">Acepto los terminos y condiciones 
                 <input id ="conditions" type="checkbox" name="conditions">
