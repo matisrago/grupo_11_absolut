@@ -4,6 +4,9 @@ const path = require('path');
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const userFilePath = path.join(__dirname, '../data/users.json');
+const users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
+
 
 const mainController = {
     home: (req,res)=> {
@@ -21,9 +24,22 @@ const mainController = {
     processLogin: (req,res) =>{
         let errors = validationResult(req);
         if(errors.isEmpty()){
+            for(let i = 0 ; i< users.length ; i++){
+                if(users[i].email === req.body.usuario && users[i].password === req.body.password){
+                        var usuarioALoguearse = users[i];
+                        
+                }
+            }
+            if(usuarioALoguearse == undefined){
+                return res.render("formDeLogin",{errors:[{msg:"Credenciales invalidas"}]})
+            }
+            req.session.usuarioLogueado = usuarioALoguearse
+                res.redirect("/")
+
         }else{
             return res.render('formDeLogin',{errors:errors.errors})
         }
+
     },
     users : (req,res)=>{
         res.redirect("/")
