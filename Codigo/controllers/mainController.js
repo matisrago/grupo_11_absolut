@@ -17,6 +17,9 @@ const mainController = {
     login: (req, res)=>{
         res.render("formDeLogin")
     },
+    users : (req,res)=>{
+        res.redirect("/")
+    },
     carrito: (req,res)=>{
         res.render("carrito")
     },
