@@ -6,7 +6,7 @@ const router = express.Router();
 const {check} = require('express-validator')
 
 router.get("/login",userControllers.login)
-router.post("/login", [check('email').isEmail().withMessage('Email invalido')], userControllers.processLogin)
+router.post("/login", [check('password').isLength({min:8}).withMessage('La contraseña debe tener minimo 8 caracteres')], userControllers.processLogin)
 
 
 module.exports = router
