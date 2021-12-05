@@ -5,7 +5,11 @@
     <link rel="stylesheet" href="/css/edicionProducto.css">
     <!-- Header -->
     <body>
-        <%- include('../views/partials/header') %>
+        <% if(user == undefined){%>
+            <%- include('../views/partials/header') %> 
+          <%}else{ %> 
+          <%- include('../views/partials/headerLogin') %> 
+          <% } %> 
 
         <main>
             <div class="formulario">

@@ -12,7 +12,11 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json())
 app.use(methodOverride('_method'));
-app.use(session({secret:'secreto'}));
+app.use(session({secret:'secreto',
+resave: false,
+saveUninitialized : false
+}
+));
 app.listen(port, () => {
     console.log("Funcionando")
 })

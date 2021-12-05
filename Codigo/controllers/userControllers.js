@@ -29,6 +29,9 @@ const usersControllers = {
             return res.render('formDeLogin',{errors:errors.errors})
         }
 
+    },
+    formulario:(req,res)=>{
+        res.render("formDeRegistro")
     }
 }
 module.exports = usersControllers;

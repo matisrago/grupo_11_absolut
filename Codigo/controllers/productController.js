@@ -7,15 +7,15 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const productController = {
 	detalle: (req, res) => {
 		const productsDetails = products.find(prod=> prod.id == req.params.id)
-		res.render('detalleProducto',{productsDetails})
+		res.render('detalleProducto',{productsDetails,user :req.session.usuarioLogueado})
 	},
 	crear: (req,res ) => {
 		
-		res.render('creacionProducto')
+		res.render('creacionProducto',{user :req.session.usuarioLogueado})
 	},
 	editar: (req,res)=> {
 		const productsDetails = products.find(prod=> prod.id == req.params.id)
-		res.render('edicionProducto',{productsDetails})
+		res.render('edicionProducto',{productsDetails,user :req.session.usuarioLogueado})
 	},
 	agregar: (req,res ) => {
 		
