@@ -1,4 +1,5 @@
-[{
+[
+ {
   "id": 1,
   "name": "Simona",
   "surname": "Rathbone",
@@ -6,7 +7,8 @@
   "image": "./images/ID1.jpg",
   "password": "jbUKQ2k23",
   "category": "Administrador"
-}, {
+ },
+ {
   "id": 2,
   "name": "Lizbeth",
   "surname": "Fitzsymons",
@@ -14,7 +16,8 @@
   "image": "./images/ID2.jpg",
   "password": "qwbQBp6qul",
   "category": "Usuario"
-}, {
+ },
+ {
   "id": 3,
   "name": "Delora",
   "surname": "Underhill",
@@ -22,7 +25,8 @@
   "image": "./images/ID3.jpg",
   "password": "3jwGYCHH7zOj",
   "category": "Usuario"
-}, {
+ },
+ {
   "id": 4,
   "name": "Jude",
   "surname": "Wombwell",
@@ -30,7 +34,8 @@
   "image": "./images/ID4.jpg",
   "password": "2j3YZdc",
   "category": "Usuario"
-}, {
+ },
+ {
   "id": 5,
   "name": "Lucas",
   "surname": "Olle",
@@ -38,7 +43,8 @@
   "image": "./images/ID5.jpg",
   "password": "kHxpJpsplTQ",
   "category": "Usuario"
-}, {
+ },
+ {
   "id": 6,
   "name": "Charo",
   "surname": "Fisbey",
@@ -46,7 +52,8 @@
   "image": "./images/ID6.jpg",
   "password": "RjsBAnlHCv",
   "category": "Usuario"
-}, {
+ },
+ {
   "id": 7,
   "name": "Erhard",
   "surname": "Coles",
@@ -54,7 +61,8 @@
   "image": "./images/ID7.jpg",
   "password": "QVXuAadz6",
   "category": "Usuario"
-}, {
+ },
+ {
   "id": 8,
   "name": "Othella",
   "surname": "Hebbes",
@@ -62,7 +70,8 @@
   "image": "./images/ID8.jpg",
   "password": "5SKmXUOC",
   "category": "Usuario"
-}, {
+ },
+ {
   "id": 9,
   "name": "Ebba",
   "surname": "Wensley",
@@ -70,7 +79,8 @@
   "image": "./images/ID9.jpg",
   "password": "S6Ni0NLzdUGr",
   "category": "Administrador"
-}, {
+ },
+ {
   "id": 10,
   "name": "Dudley",
   "surname": "Streatfeild",
@@ -78,4 +88,27 @@
   "image": "./images/ID10.jpg",
   "password": "D3N7nA7vds",
   "category": "Usuario"
-}]
+ },
+ {
+  "id": 11,
+  "fName": "j",
+  "lName": "j",
+  "date": "2021-12-01",
+  "conditions": "on",
+  "email": "julio@hotmail.com",
+  "password": "$2a$10$nqD8YNRrMo.rNheNv.iFmuQfEpAx01FRxOWRI.0/.6aFnQ7u3uFl6",
+  "repeatPassword": "12345678",
+  "avatar": "1638998749501.jpg"
+ },
+ {
+  "id": 12,
+  "fName": "aaa",
+  "lName": "www",
+  "date": "2021-12-07",
+  "conditions": "on",
+  "email": "julio.e@gmail.com",
+  "password": "$2a$10$QdKRZh9riS8qPmlpI4sxAOE8HKR2FDMo8lgvc0iYR8N5stelE2YNe",
+  "repeatPassword": "12345678",
+  "avatar": "1638999656938.jpg"
+ }
+]
