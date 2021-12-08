@@ -90,14 +90,25 @@
   "category": "Usuario"
  },
  {
-  "id": 12,
-  "fName": "alfredo",
-  "lName": "raffo",
+  "id": 11,
+  "fName": "j",
+  "lName": "j",
   "date": "2021-12-01",
   "conditions": "on",
-  "email": "alfre@gmail.com",
-  "password": "$2a$10$sFt9apMaUI0GkZIt8PjOeOouvE3iao0E0ToLUdyZBmJNkXG/inaw.",
-  "repeatPassword": "$2a$10$Tbrb7EYNfvJ2W/Nl9.00l.jXjmB3VVK6naKv2q8t5f0He5pxP1v/S",
-  "avatar": "1639000744571.jpg"
+  "email": "julio@hotmail.com",
+  "password": "$2a$10$nqD8YNRrMo.rNheNv.iFmuQfEpAx01FRxOWRI.0/.6aFnQ7u3uFl6",
+  "repeatPassword": "12345678",
+  "avatar": "1638998749501.jpg"
+ },
+ {
+  "id": 12,
+  "fName": "aaa",
+  "lName": "www",
+  "date": "2021-12-07",
+  "conditions": "on",
+  "email": "julio.e@gmail.com",
+  "password": "$2a$10$QdKRZh9riS8qPmlpI4sxAOE8HKR2FDMo8lgvc0iYR8N5stelE2YNe",
+  "repeatPassword": "12345678",
+  "avatar": "1638999656938.jpg"
  }
 ]

@@ -21,8 +21,10 @@ const usersControllers = {
         if(errors.isEmpty()){
             for(let i = 0 ; i< users.length ; i++){
                 let userPassword  = req.body.password
-                if(users[i].email == req.body.usuario && (users[i].password == req.body.password||users[i].repeatPassword==req.body.password)){
+                if(users[i].email === req.body.usuario && (users[i].password == req.body.password || users[i].repeatPassword == req.body.password)){
+                    
                     var usuarioALoguearse = users[i]
+                    
                 }
             }
             if(usuarioALoguearse == undefined){
