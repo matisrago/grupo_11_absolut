@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require('express');
 const app = express()
 var path = require('path');
 const methodOverride =  require('method-override');

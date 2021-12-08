@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('../views/partials/head') %> 
-    <link rel="stylesheet" href="./css/formDeRegistro.css">
+    <link rel="stylesheet" href="/css/formDeRegistro.css">
 <body>
     <%- include('../views/partials/header') %> 
 <main>
     <section>
         <h2 class="titulo">NUEVA CUENTA</h2>
         <article>
-        
-            <form action="/formulario" method ="POST">
+            <% if (typeof errors != "undefined") { %>
+                <p style="color:red">ERROR!</p> 
+                <ul>
+                    <% for (let i=0; i<errors.length;i++){ %> 
+                    <li>
+                        <%= errors[i].msg %> 
+                    </li>
+                </ul>
+                <% } %> 
+                <% }  %> 
+            <form action="/users/formulario" method ="POST"  enctype="multipart/form-data">
+                
              <div class ="flex-all">  
                 <div class="flex-left">
                 <h4 class="infor">INFORMACION PERSONAL</h4>
@@ -22,8 +32,8 @@
             <label for="date"> Edad* <br>
             <input  type="date" name="date" id="date">
             </label><br>
-            <input type="file" name = "image" id="file" multiple>
-            br
+            <input type="file" name = "imagenUsuario" id="file" >
+            <br>
 
             <label for="conditions">Acepto los terminos y condiciones 
                 <input id ="conditions" type="checkbox" name="conditions">
@@ -41,12 +51,12 @@
          </label> <br><br>
 
        <label for="repeat-password"> Repetir Contraseña <br>
-        <input type="password" name="repeat-password" placeholder="Contraseña" id="repeat-password">
+        <input type="password" name="repeatPassword" placeholder="Contraseña" id="repeatPassword">
        </label> <br><br>
         </div>
         </div> 
         <div class="button-submit">
-       <button type ="submit"> Enviar</button>
+       <button type ="submit" > Enviar</button>
         </div>
         </form>
     </article>

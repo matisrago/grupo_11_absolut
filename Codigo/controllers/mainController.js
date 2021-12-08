@@ -15,9 +15,7 @@ const mainController = {
         res.render("home",{productsDestacado,productsOfertas});
 
     },
-    registro: (req,res)=>{
-        res.render("formDeRegistro")
-    },
+    
     login: (req, res)=>{
         res.render("formDeLogin")
     },

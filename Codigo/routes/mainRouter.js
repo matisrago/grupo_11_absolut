@@ -8,7 +8,7 @@ const mainController = require("../controllers/mainController");
 router.get("/",mainController.home);
 
 
-
+ 
 
 router.get("/carrito",mainController.carrito);
 
