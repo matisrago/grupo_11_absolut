@@ -3,7 +3,11 @@
 <%- include('../views/partials/head') %> 
 <link rel="stylesheet" href="./css/formDeCarrito.css">
 <body>
-    <%- include('../views/partials/header') %> 
+    <% if(user == undefined){%>
+        <%- include('../views/partials/header') %> 
+      <%}else{ %> 
+      <%- include('../views/partials/headerLogin') %> 
+      <% } %> 
     <main>
         <div class="linea">
             

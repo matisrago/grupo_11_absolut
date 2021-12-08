@@ -12,7 +12,7 @@ const mainController = {
     home: (req,res)=> {
         const productsDestacado = products.filter((prod) => prod.category === 'destacado');
 		const productsOfertas = products.filter((prod) => prod.category === 'oferta');
-        res.render("home",{productsDestacado,productsOfertas});
+        res.render("home",{productsDestacado,productsOfertas,user :req.session.usuarioLogueado});
 
     },
     
@@ -43,13 +43,13 @@ const mainController = {
         res.redirect("/")
     },
     carrito: (req,res)=>{
-        res.render("carrito")
+        res.render("carrito",{user :req.session.usuarioLogueado})
     },
     creacion: (req,res)=>{
-        res.render("creacionProducto")
+        res.render("creacionProducto",{user :req.session.usuarioLogueado})
     },
     edicion:(req,res)=>{
-        res.render("edicionProducto")
+        res.render("edicionProducto",{user :req.session.usuarioLogueado})
     },
     
     store: (req,res) => {

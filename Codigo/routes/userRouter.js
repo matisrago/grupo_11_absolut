@@ -4,10 +4,9 @@ const path = require('path')
 const router = express.Router();
 const {check} = require('express-validator');
 const usersControllers = require('../controllers/userControllers');
-const validations = require('../middlewares/validationRegister');
+const validations = require('../controllers/midd/validationRegister');
 
 const multer = require('multer')
-
 
 const storage = multer.diskStorage({
     destination: (req, file, cb)=> {
@@ -23,12 +22,8 @@ const upload = multer({storage})
 
 
 router.get("/login",userControllers.login)
-router.post("/login", [check('email').isEmail().withMessage('Email invalido')], userControllers.processLogin)
-
-router.get("/formulario",userControllers.registro);
+router.post("/login", [check('password').isLength({min:8}).withMessage('La contraseña debe tener minimo 8 caracteres')], userControllers.processLogin)
+router.get("/formulario",usersControllers.formulario)
 router.post("/formulario",upload.single('imagenUsuario'),validations,usersControllers.processRegister)
-
-
-
 
 module.exports = router

@@ -4,7 +4,11 @@
     <%- include('../views/partials/head') %>  
 
 <body>
-  <%- include('../views/partials/header') %> 
+  <% if(user == undefined){%>
+    <%- include('../views/partials/header') %> 
+  <%}else{ %> 
+  <%- include('../views/partials/headerLogin') %> 
+  <% } %> 
  <main>
      <section>
     <article>
@@ -35,7 +39,7 @@
     <article>
         <br> <br>
         <div class="box-h3">
-          <h3 class="h3-text">PRODUCTOS DESTACADOS</h3> 
+          <h3 class="h3-text">Destacados </h3> 
         </div>
       <div class="main-flex">
         <% productsDestacado.forEach(prod =>{ %> 
