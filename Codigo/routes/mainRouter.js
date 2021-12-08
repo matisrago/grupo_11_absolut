@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const {check} = require('express-validator')
-
+const authMiddleware = require('../controllers/midd/authMiddleware')
 const mainController = require("../controllers/mainController");
 
 
@@ -10,7 +10,7 @@ router.get("/",mainController.home);
 
  
 
-router.get("/carrito",mainController.carrito);
+router.get("/carrito",authMiddleware,mainController.carrito);
 
 router.get("/agregar",mainController.creacion)
 
