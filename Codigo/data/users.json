@@ -12,7 +12,7 @@
   "surname": "Fitzsymons",
   "email": "lfitzsymons1@cloudflare.com",
   "image": "./images/ID2.jpg",
-  "Password": "qwbQBp6qul",
+  "password": "qwbQBp6qul",
   "category": "Usuario"
 }, {
   "id": 3,
@@ -20,7 +20,7 @@
   "surname": "Underhill",
   "email": "dunderhill2@xing.com",
   "image": "./images/ID3.jpg",
-  "Password": "3jwGYCHH7zOj",
+  "password": "3jwGYCHH7zOj",
   "category": "Usuario"
 }, {
   "id": 4,
@@ -28,7 +28,7 @@
   "surname": "Wombwell",
   "email": "jwombwell3@cnn.com",
   "image": "./images/ID4.jpg",
-  "Password": "2j3YZdc",
+  "password": "2j3YZdc",
   "category": "Usuario"
 }, {
   "id": 5,
@@ -36,7 +36,7 @@
   "surname": "Olle",
   "email": "lolle4@trellian.com",
   "image": "./images/ID5.jpg",
-  "Password": "kHxpJpsplTQ",
+  "password": "kHxpJpsplTQ",
   "category": "Usuario"
 }, {
   "id": 6,
@@ -44,7 +44,7 @@
   "surname": "Fisbey",
   "email": "cfisbey5@i2i.jp",
   "image": "./images/ID6.jpg",
-  "Password": "RjsBAnlHCv",
+  "password": "RjsBAnlHCv",
   "category": "Usuario"
 }, {
   "id": 7,
@@ -52,7 +52,7 @@
   "surname": "Coles",
   "email": "ecoles6@1und1.de",
   "image": "./images/ID7.jpg",
-  "Password": "QVXuAadz6",
+  "password": "QVXuAadz6",
   "category": "Usuario"
 }, {
   "id": 8,
@@ -60,7 +60,7 @@
   "surname": "Hebbes",
   "email": "ohebbes7@netvibes.com",
   "image": "./images/ID8.jpg",
-  "Password": "5SKmXUOC",
+  "password": "5SKmXUOC",
   "category": "Usuario"
 }, {
   "id": 9,
@@ -68,7 +68,7 @@
   "surname": "Wensley",
   "email": "ewensley8@fotki.com",
   "image": "./images/ID9.jpg",
-  "Password": "S6Ni0NLzdUGr",
+  "password": "S6Ni0NLzdUGr",
   "category": "Administrador"
 }, {
   "id": 10,
@@ -76,6 +76,6 @@
   "surname": "Streatfeild",
   "email": "dstreatfeild9@redcross.org",
   "image": "./images/ID10.jpg",
-  "Password": "D3N7nA7vds",
+  "password": "D3N7nA7vds",
   "category": "Usuario"
 }]
