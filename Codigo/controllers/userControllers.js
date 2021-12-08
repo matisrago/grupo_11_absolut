@@ -21,7 +21,7 @@ const usersControllers = {
         if(errors.isEmpty()){
             for(let i = 0 ; i< users.length ; i++){
                 let userPassword  = req.body.password
-                if(users[i].email == req.body.usuario && users[i].password == req.body.password){
+                if(users[i].email == req.body.usuario && (users[i].password == req.body.password||users[i].repeatPassword==req.body.password)){
                     var usuarioALoguearse = users[i]
                 }
             }
@@ -62,6 +62,7 @@ const usersControllers = {
         let userToCreate = {
             ...req.body,
             password: bcryptjs.hashSync(req.body.password, 10),
+            repeatPassword: bcryptjs.hashSync(req.body.repeatPassword, 10),
             avatar: req.file.filename
 
         }
