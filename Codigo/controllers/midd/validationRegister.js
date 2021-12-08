@@ -6,10 +6,9 @@ module.exports = [
     body('fName').notEmpty().withMessage('Tienes que escribir el Nombre'),
     body('email').notEmpty().withMessage('tienes que escribir el correo electronico').bail()
     .isEmail().withMessage('debes escribir un formato de correo válido'),
-    body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
+    body('password').isLength({min:8}).withMessage('La contraseña debe tener minimo 8 caracteres'),
     body('conditions').notEmpty().withMessage('tienes que aceptar los terminos y condiciones'),
     body('date').notEmpty().withMessage('Tienes que completar la fecha'),
-    body('repeat-password').notEmpty().withMessage('tienes que escribir una contraseña'),
     body('imagenUsuario').custom((value, {req})=>{
         let file = req.file;
         let acceptedExtensions = ['.jpg','.png','.gif'];

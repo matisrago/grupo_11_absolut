@@ -1,5 +1,4 @@
-[
- {
+[{
   "id": 1,
   "name": "Simona",
   "surname": "Rathbone",
@@ -7,8 +6,7 @@
   "image": "./images/ID1.jpg",
   "password": "jbUKQ2k23",
   "category": "Administrador"
- },
- {
+}, {
   "id": 2,
   "name": "Lizbeth",
   "surname": "Fitzsymons",
@@ -16,8 +14,7 @@
   "image": "./images/ID2.jpg",
   "password": "qwbQBp6qul",
   "category": "Usuario"
- },
- {
+}, {
   "id": 3,
   "name": "Delora",
   "surname": "Underhill",
@@ -25,8 +22,7 @@
   "image": "./images/ID3.jpg",
   "password": "3jwGYCHH7zOj",
   "category": "Usuario"
- },
- {
+}, {
   "id": 4,
   "name": "Jude",
   "surname": "Wombwell",
@@ -34,8 +30,7 @@
   "image": "./images/ID4.jpg",
   "password": "2j3YZdc",
   "category": "Usuario"
- },
- {
+}, {
   "id": 5,
   "name": "Lucas",
   "surname": "Olle",
@@ -43,8 +38,7 @@
   "image": "./images/ID5.jpg",
   "password": "kHxpJpsplTQ",
   "category": "Usuario"
- },
- {
+}, {
   "id": 6,
   "name": "Charo",
   "surname": "Fisbey",
@@ -52,8 +46,7 @@
   "image": "./images/ID6.jpg",
   "password": "RjsBAnlHCv",
   "category": "Usuario"
- },
- {
+}, {
   "id": 7,
   "name": "Erhard",
   "surname": "Coles",
@@ -61,8 +54,7 @@
   "image": "./images/ID7.jpg",
   "password": "QVXuAadz6",
   "category": "Usuario"
- },
- {
+}, {
   "id": 8,
   "name": "Othella",
   "surname": "Hebbes",
@@ -70,8 +62,7 @@
   "image": "./images/ID8.jpg",
   "password": "5SKmXUOC",
   "category": "Usuario"
- },
- {
+}, {
   "id": 9,
   "name": "Ebba",
   "surname": "Wensley",
@@ -79,8 +70,7 @@
   "image": "./images/ID9.jpg",
   "password": "S6Ni0NLzdUGr",
   "category": "Administrador"
- },
- {
+}, {
   "id": 10,
   "name": "Dudley",
   "surname": "Streatfeild",
@@ -88,16 +78,4 @@
   "image": "./images/ID10.jpg",
   "password": "D3N7nA7vds",
   "category": "Usuario"
- },
- {
-  "id": 11,
-  "fName": "Raul",
-  "lName": "Emilio",
-  "date": "2021-12-01",
-  "conditions": "on",
-  "email": "raulbuteler62@gmail.com",
-  "password": "$2a$10$EKwFbmHfu4dYrEJtjdEAue0IanXcpO6sQo/CqXEaVBGgAEKbob59u",
-  "repeat-password": "123",
-  "avatar": "1638984674339.jpg"
- }
-]
+}]

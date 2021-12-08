@@ -40,14 +40,13 @@ const usersControllers = {
         },
     
     processRegister: (req, res) =>{
-        const resultadoValidation = validationResult(req);
-
-        if (resultadoValidation.errors.length > 0){
-            return res.render('formDeRegistro', {
-                errors: resultadoValidation.mapped(),
-                oldData: req.body
-            });
+        let errors = validationResult(req);
+        if(errors.isEmpty()){
+            res.redirect('/')  
+        }else{
+            return res.render('formDeRegistro',{errors:errors.errors})
         }
+        
         let userInDB = User.findByField('email', req.body.email);
 
         if (userInDB) {
