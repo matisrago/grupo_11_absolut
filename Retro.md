@@ -55,3 +55,12 @@ Hacer menos: Commits largos
 
 Dejar de hacer: dejar de hacer las cosas a ultimo momento V.2
 
+Retrospectiva Sprint 5:
+
+Comenzar a hacer: terminar con mas tiempo
+
+Continuar haciendo : cumplir con todos los objectivos
+
+Hacer menos : Afectar el trabajo del otro
+
+Dejar de hacer: olvidarse de pullear
