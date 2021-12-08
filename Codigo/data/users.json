@@ -4,7 +4,7 @@
   "name": "Simona",
   "surname": "Rathbone",
   "email": "srathbone0@upenn.edu",
-  "image": "./images/ID1.jpg",
+  "image": "/images/ID1.jpg",
   "password": "jbUKQ2k23",
   "category": "Administrador"
  },
@@ -13,7 +13,7 @@
   "name": "Lizbeth",
   "surname": "Fitzsymons",
   "email": "lfitzsymons1@cloudflare.com",
-  "image": "./images/ID2.jpg",
+  "image": "/images/ID2.jpg",
   "password": "qwbQBp6qul",
   "category": "Usuario"
  },
@@ -22,7 +22,7 @@
   "name": "Delora",
   "surname": "Underhill",
   "email": "dunderhill2@xing.com",
-  "image": "./images/ID3.jpg",
+  "image": "/images/ID3.jpg",
   "password": "3jwGYCHH7zOj",
   "category": "Usuario"
  },
@@ -31,7 +31,7 @@
   "name": "Jude",
   "surname": "Wombwell",
   "email": "jwombwell3@cnn.com",
-  "image": "./images/ID4.jpg",
+  "image": "/images/ID4.jpg",
   "password": "2j3YZdc",
   "category": "Usuario"
  },
@@ -40,7 +40,7 @@
   "name": "Lucas",
   "surname": "Olle",
   "email": "lolle4@trellian.com",
-  "image": "./images/ID5.jpg",
+  "image": "/images/ID5.jpg",
   "password": "kHxpJpsplTQ",
   "category": "Usuario"
  },
@@ -49,7 +49,7 @@
   "name": "Charo",
   "surname": "Fisbey",
   "email": "cfisbey5@i2i.jp",
-  "image": "./images/ID6.jpg",
+  "image": "/images/ID6.jpg",
   "password": "RjsBAnlHCv",
   "category": "Usuario"
  },
@@ -58,7 +58,7 @@
   "name": "Erhard",
   "surname": "Coles",
   "email": "ecoles6@1und1.de",
-  "image": "./images/ID7.jpg",
+  "image": "/images/ID7.jpg",
   "password": "QVXuAadz6",
   "category": "Usuario"
  },
@@ -67,7 +67,7 @@
   "name": "Othella",
   "surname": "Hebbes",
   "email": "ohebbes7@netvibes.com",
-  "image": "./images/ID8.jpg",
+  "image": "/images/ID8.jpg",
   "password": "5SKmXUOC",
   "category": "Usuario"
  },
@@ -76,7 +76,7 @@
   "name": "Ebba",
   "surname": "Wensley",
   "email": "ewensley8@fotki.com",
-  "image": "./images/ID9.jpg",
+  "image": "/images/ID9.jpg",
   "password": "S6Ni0NLzdUGr",
   "category": "Administrador"
  },
@@ -85,7 +85,7 @@
   "name": "Dudley",
   "surname": "Streatfeild",
   "email": "dstreatfeild9@redcross.org",
-  "image": "./images/ID10.jpg",
+  "image": "/images/ID10.jpg",
   "password": "D3N7nA7vds",
   "category": "Usuario"
  },

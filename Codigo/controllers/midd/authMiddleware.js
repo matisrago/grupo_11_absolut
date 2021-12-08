@@ -1,8 +1,8 @@
 function authMiddleware(req,res,next){
     if(req.session.usuarioLogueado != undefined){
-        next()
+        res.render('perfil',{user :req.session.usuarioLogueado})
     }else{
-        res.send("Esta pagina es solo para Usuarios logueados")
+        res.render("formDeLogin")
     }
 
 }

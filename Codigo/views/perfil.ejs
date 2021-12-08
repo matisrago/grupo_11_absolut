@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../views/partials/head') %> 
+    <link rel="stylesheet" href="../css/perfil.css">
+
+     <%- include('../views/partials/headerLogin') %> 
+<body>
+    <br><br><br>
+<h2>Bienvenido a tu perfil <%= user.email %>!!! </h2>
+<img src="<%= user.image %> " alt="">
+</body>
+</html>
