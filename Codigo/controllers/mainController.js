@@ -1,7 +1,7 @@
 const { validationResult } = require('express-validator');
 const fs = require('fs');
 const path = require('path');
-
+const bcryptjs = require('bcryptjs')
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const userFilePath = path.join(__dirname, '../data/users.json');
@@ -23,7 +23,8 @@ const mainController = {
         let errors = validationResult(req);
         if(errors.isEmpty()){
             for(let i = 0 ; i< users.length ; i++){
-                if(users[i].email === req.body.usuario && (users[i].password == req.body.password || users[i].repeatPassword == req.body.password)){
+                if(users[i].email === req.body.usuario ){
+                    if (bcrypt)
                         var usuarioALoguearse = users[i];
                     }
                 }
