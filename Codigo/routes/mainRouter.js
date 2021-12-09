@@ -10,7 +10,7 @@ router.get("/",mainController.home);
 
  
 
-router.get("/carrito",authMiddleware,mainController.carrito);
+router.get("/carrito",mainController.carrito);
 
 router.get("/agregar",mainController.creacion)
 
