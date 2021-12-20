@@ -13,7 +13,7 @@ body{
     width: 100vw;
     height: auto;
     align-self: center;
-    margin: 0px 10px 10px 0px;
+    margin-top:50px;
     border: solid 1px black;
     max-width: 400px;
     
@@ -42,71 +42,4 @@ img{
     height: 33%;
     border: solid black 1px;
 }
-footer{
-    display: none;
-}
-@media  (min-width: 720px){
-    .iconos{
-        display: none;
-    }
-    .iconosDesktop{
-        display: flex;
-        position: absolute;
-        right: 20px;
-        }
-    #search-bar{
-        display: flex;
-        width: 250px;
-    }
-    input {
-        background-color: #ffe4c4;
-    }
-    .desktop.lupa {
-        display: none;
-        padding-top:30px ;
-        width: 100%;
-        align-content: center;
-        background-color: #ffe4c4;
-        justify-content: center;
-        
-    }
-    
-    a{
-    color: white;
-    text-decoration: none;
-    }
 
-    img:hover{
-        box-shadow: 2px 2px black;
-    }
-    .producto{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .datos{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    
-    #botones{
-        align-self: flex-end;
-    }
-    .relacionados{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    h3{
-        text-align: left;
-    }
-    footer{
-        display: flex;
-        margin-top: 60px;
-        background-color: black;
-
-    }
-    .textoFooter i{
-        font-size: 50px;
-    }
-        
-}

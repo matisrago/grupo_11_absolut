@@ -10,7 +10,9 @@
         </div>
 
         <div>
+            <a href="/">
             <img id="logo" src="/images/para_eue.png" alt="logo" >
+            </a>
         </div>
         <div class="busqueda-burger">
             <div>
@@ -20,13 +22,13 @@
                <a href="/carrito"> <i id="lupa" class="fas fa-shopping-cart"></i></a>
             </div>
             <div>
-                <a href="/editar"><i id="lupa" class="fas fa-pencil-alt"></i></a>
-            </div>
-            <div>
             <a href="/agregar"><i id="lupa" class="fas fa-plus"></i></a>
             </div>
             <div>
             <a href="/users/login"><i id="lupa" class="fas fa-portrait"></i></a>
+            </div>
+            <div>
+                <p style="color: white;">Bienvenido, <%= user.name %> </p>
             </div>
             
         </div>
@@ -38,7 +40,7 @@
         <a class="barra-de-cate" href="/"><h2>Home</h2></a>
         <a class="barra-de-cate" href=""><h2>Categoria 1</h2></a>
         <a class="barra-de-cate" href=""><h2>Categoria 2</h2></a>
-        <a class="barra-de-cate" href=""><h2><%= user.email %> </h2></a>
+        <a class="barra-de-cate" href=""><h2>Categoria 3 </h2></a>
 
     </div>
     
