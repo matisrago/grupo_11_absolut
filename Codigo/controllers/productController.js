@@ -46,6 +46,12 @@ const productController = {
 		fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
 
 		res.redirect('/')
+	},
+	listado: (req,res)=>{
+		db.Products.findAll()
+		.then(function(productos){
+			res.render("listadoProductos",{productos:productos})
+		})
 	}
 }
 	

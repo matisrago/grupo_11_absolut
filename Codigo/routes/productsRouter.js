@@ -17,6 +17,7 @@ const upload = multer({storage:storage})
 const productsController = require('../controllers/productController');
 
 /*** GET ALL PRODUCTS ***/ 
+router.get("/listado",productController.listado)
 router.get('/:id', productsController.detalle);
 router.get('/:id/editar',productController.editar);
 

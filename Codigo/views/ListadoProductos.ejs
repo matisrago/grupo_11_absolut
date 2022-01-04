@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+    </head>
+    <body>
+        <h1>Listado de Productos:</h1>
+        <ul>
+            <% for (let i = 0; i< productos.length; i++){%>
+                <li>
+                    <%= productos[i].name %>
+                    aaaa
+                </li>
+
+            <%}%>
+        </ul>
+        <%- include('../views/partials/footer') %> 
+    </body>
+</html>
