@@ -20,7 +20,6 @@ const usersControllers = {
         let errors = validationResult(req);
         if(errors.isEmpty()){
             for(let i = 0 ; i< users.length ; i++){
-                let userPassword  = req.body.password
                 if(users[i].email == req.body.usuario && bcrypt.compareSync(req.body.password, users[i].password)){
                         var usuarioALoguearse = users[i];
                 }

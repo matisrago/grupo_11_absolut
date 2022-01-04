@@ -91,8 +91,8 @@
  },
  {
   "id": 11,
-  "fName": "j",
-  "lName": "j",
+  "name": "j",
+  "surame": "j",
   "date": "2021-12-01",
   "conditions": "on",
   "email": "julio@hotmail.com",
@@ -102,8 +102,8 @@
  },
  {
   "id": 12,
-  "fName": "aaa",
-  "lName": "www",
+  "name": "aaa",
+  "surname": "www",
   "date": "2021-12-07",
   "conditions": "on",
   "email": "julio.e@gmail.com",
