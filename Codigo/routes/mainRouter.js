@@ -16,13 +16,4 @@ router.post('/agregar', mainController.store )
 router.get("/editar",mainController.edicion)
 
 
-
-
-
-
-
-
-
-
-
 module.exports= router;
