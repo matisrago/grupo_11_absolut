@@ -5,9 +5,10 @@ module.exports= function(sequelize,dataTypes){
         id:{type:dataTypes.INTEGER, primaryKey:true,autoIncrement:true},
         name:{type:dataTypes.STRING},
         surname:{type:dataTypes.STRING},
+        date:{type:dataTypes.DATE},
+        email:{type:dataTypes.STRING},
         password:{type:dataTypes.STRING},
         image:{type:dataTypes.STRING},
-        id_category:{type:dataTypes.INTEGER}
     }
 
     let config ={

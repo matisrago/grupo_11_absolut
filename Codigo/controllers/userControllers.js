@@ -2,19 +2,16 @@ const { validationResult } = require('express-validator');
 const fs = require('fs');
 const path = require('path');
 const bcrypt = require('bcryptjs')
-
 const productsFilePath = path.join(__dirname, '../data/users.json');
 const users = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+let db = require("../database/models");
+const { resolve } = require('dns');
 
-const User = require ('../models/user')
 
 
 const usersControllers = {
     login: (req, res)=>{
         res.render("formDeLogin")
-    },
-    registro: (req,res)=>{
-        res.render("formDeRegistro")
     },
     processLogin: (req,res) =>{
         let errors = validationResult(req);
@@ -37,39 +34,37 @@ const usersControllers = {
     formulario:(req,res)=>{
         res.render("formDeRegistro")
         },
-    
-    processRegister: (req, res) =>{
-        let errors = validationResult(req);
-        if(errors.isEmpty()){
-            res.redirect('/')  
-        }else{
-            return res.render('formDeRegistro',{errors:errors.errors})
-        }
+    create: (req, res) =>{
         
-        let userInDB = User.findByField('email', req.body.email);
+        let errors = validationResult(req);
+        db.Users.findOne({
+            where:{
+                email: req.body.email
+            }
+        }).then(()=>{
+                res.render ('formDeRegistro',{errors: {email:{msg: 'Este email ya  está registrado'}},
+                });
+            
+        }).catch(()=>{
+            if(errors.isEmpty()){
+                db.Users.create({
+                    name:req.body.name ,
+                    surname: req.body.surname,
+                    email: req.body.email,
+                    date: req.body.date,
+                    password: bcrypt.hashSync(req.body.password, 10),
+                    repeatPassword: bcrypt.hashSync(req.body.repeatPassword, 10),
+                    image : req.file.filename
+                })
+                res.redirect("/")  
+            }else{
+                return res.render('formDeRegistro',{errors:errors.errors})
+            }
 
-        if (userInDB) {
-            return res.render ('formDeRegistro',{
-                errors: {
-                    email:{
-                        msg: 'Este email ya  está registrado'
-                    }
-                },
-                oldData: req.body
-            });
-        }
-        let userToCreate = {
-            ...req.body,
-            password: bcryptjs.hashSync(req.body.password, 10),
-            repeatPassword: bcryptjs.hashSync(req.body.repeatPassword, 10),
-            avatar: req.file.filename
-
-        }
-
-        User.create(userToCreate);
-        return res.send('ok se guardo el usario');
+        })
 
     }
+    
 
 }
 module.exports = usersControllers;
