@@ -6,13 +6,15 @@ const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const userFilePath = path.join(__dirname, '../data/users.json');
 const users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
+const db = require('../database/models')
 
 
 const mainController = {
     home: (req,res)=> {
-        const productsDestacado = products.filter((prod) => prod.category === 'destacado');
-		const productsOfertas = products.filter((prod) => prod.category === 'oferta');
-        res.render("home",{productsDestacado,productsOfertas,user :req.session.usuarioLogueado});
+        db.Products.findAll()
+        .then((products)=>{const productsDestacado = products.filter((prod) => prod.id_ubicacion === 2);
+		const productsOfertas = products.filter((prod) => prod.id_ubicacion === 1);
+        res.render("home",{productsDestacado,productsOfertas,user :req.session.usuarioLogueado});})
 
     },
     
