@@ -20,7 +20,7 @@
     <section id="botones">
   
 
-        
+
 
     <button type="button"><i class="fas fa-plus"></i></button><span>15</span><button type="button"><i class="fas fa-minus"></i></button>
 
@@ -28,11 +28,21 @@
     <% if(productsDetails != undefined){ %> 
     <a href="/products/<%= productsDetails.id%>/editar ">
     <button type="button">Editar producto</button></a>
-    <form action="/products/<%=productsDetails.id%>?_method=DELETE"  method="POST">
-        <% } %> 
-    <button type="submit">Eliminar Producto</button>
+   
+   <script language="JavaScript">
+        function pregunta(){
+            if (confirm('¿Estás seguro de que querés eliminar tu producto? No vas a poder volver atrás.')){
+               document.deleteForm.submit()
+            }
+        }
+   </script>
+    
+    <form name="deleteForm" action="/productsRouter/delete/<%= productsDetails.id %>" method="POST">
+    
+        <input type="button" onclick="pregunta()" class="boton-eliminar-product ml-4" value="Eliminar producto">
+
     </form>
-</section>
+    </section>
     </div>
     <h3>Productos relacionados</h3>
     <div class="relacionados">
