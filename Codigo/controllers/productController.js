@@ -32,7 +32,7 @@ const productController = {
 			
 		};
 		products[productIndex] = updatedProduct;
-		fs.writeFileSync(productsFilePath,JSON.stringify(products, null," "));
+		fs.writeFileSync(-productsFilePath,JSON.stringify(products, null," "));
 
 		res.redirect('/')
 	},
