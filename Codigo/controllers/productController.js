@@ -7,8 +7,8 @@ let db = require("../database/models")
 
 const productController = {
 	detalle: (req, res) => {
-		const productsDetails = products.find(prod=> prod.id == req.params.id)
-		res.render('detalleProducto',{productsDetails,user :req.session.usuarioLogueado})
+		db.Products.findByPk(req.params.id)
+		.then((product)=>{res.render('detalleProducto',{product,user :req.session.usuarioLogueado})})
 	},
 	crear: (req,res ) => {
 		
@@ -37,16 +37,17 @@ const productController = {
 		res.redirect('/')
 	},
 	destroy: (req,res) => {
-
-		const productIndex = products.findIndex((producto)=> {
-			return (producto.id == req.params.id)
-		});
-		products.splice(productIndex,1);
-
-		fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
-
-		res.redirect('/')
-	},
+		let productABorrar = req.params.id;
+	
+	db.Products.destroy({
+		where: [{ id: productABorrar}]
+	})
+	.then( function () {
+		return res.redirect ('/');
+	})
+	.catch( e => {console.log(e)})
+	}
+	,
 	listado: (req,res)=>{
 		db.Products.findAll()
 		.then(function(productos){
@@ -54,26 +55,6 @@ const productController = {
 		})
 	}
 }
-function ABorrar(req, res) {
-        let productABorrar = req.params.id;
-	
-	db.Products.destroy({
-
-		where: [
-			{ id: productABorrar}
-		]
-	
-	})
-   
-	.then( function () {
-
-		return res.redirect ('/');
-
-	})
-
-	.catch( e => {console.log(e)})
-}
-
 
 
     module.exports = productController;
