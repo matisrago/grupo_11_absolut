@@ -1,0 +1,29 @@
+<html>
+    <%- include('../views/partials/head') %> 
+    <link rel="stylesheet" href="/css/edicionPerfil.css">
+    <body>
+        <%- include('../views/partials/header') %> 
+        <form action="/users/actualizar/<%= user.id %>" method="POST" enctype="multipart/form-data">
+            <div class="datos">
+            <h1>Edición de perfil</h1>
+            <label for="name"> Nombre* <br>
+            <input type="text" name="name" placeholder="Nombre">
+            <br>
+            <label for="surame"> Apellido*<br>
+            <input  type="text" name="surname" placeholder="Apellido" id="lName">
+            <br>
+            <label for="date"> Edad* <br>
+            <input  type="date" name="date" id="date">
+            <h4 class="infor">INFORMACION DE INICIO DE SESION</h4>
+            <label for="email"> Correo electronico <br>
+            <input type="email" name="email"  placeholder="Correo Electronico" id="email">
+            <br>
+            <label>Imagen de usuario</label><br>
+            <input type="file" name = "imagenUsuario" id="file" >
+            <br>
+            <button type="submit">Enviar</button>
+        </div>
+        </form>
+        <%- include('../views/partials/footer') %> 
+    </body>
+</html>

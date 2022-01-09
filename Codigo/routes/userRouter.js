@@ -25,6 +25,9 @@ router.get("/login",authMiddleware,userControllers.login)
 router.post("/login", [check('password').isLength({min:8}).withMessage('La contraseña debe tener minimo 8 caracteres')], userControllers.processLogin)
 router.get("/formulario",usersControllers.formulario)
 router.post("/formulario",upload.single('imagenUsuario'),validations,usersControllers.create)
-router.get("/detalle",userControllers.detalle)
+router.get("/detalle/:id",userControllers.detalle)
+router.get("/edicion/:id",userControllers.edicion)
+router.post("/actualizar/:id", userControllers.actualizar)
+
 
 module.exports = router

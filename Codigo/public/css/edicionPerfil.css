@@ -1,0 +1,7 @@
+.datos{
+    text-align: center;
+    margin: 15px;
+}
+.datos * {
+    margin: 10px;
+}
