@@ -4,8 +4,12 @@
 }
 
 
-
-
+body{
+    background-color: lightgray;
+}
+main{
+    margin-bottom:25px;
+}
 .h3-text{
     color: black;
     text-align: center;
@@ -21,17 +25,23 @@
     display: flex;
     padding-top: 5%;
     flex-direction: column;
+    justify-content: center;
 }
 .div-padre{
-    margin-left:50px;
-    margin-right:50px;
+    background-color: #dddbdb;
+    width: 210px;
+    height: 350px;
+    box-shadow: 0px 10px 10px black;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 10px;
     padding-bottom: 10px;
     border: 1px solid rgb(99, 99, 99);
-    border-radius: 5px;
+    border-radius: 5px
 }
 .div-hijo{
     text-align: center;
+    border-top: 2px solid black;
 }
 main img{
     width: 200px;
@@ -117,9 +127,6 @@ div.a-carrito{
     flex-wrap: wrap;
     justify-content: space-between;
     }
-    main section article img{
-        width:160px;   
-       }
        input{
            width: 240px;
        }
@@ -136,9 +143,10 @@ div.a-carrito{
     }
     .sliderDesktop{
         display: block;
-        width: 100%;
         margin: auto;
         overflow: hidden;
+        padding-top: 15px;
+        width: 98%;
     }
     .sliderDesktop ul{
         display: flex;

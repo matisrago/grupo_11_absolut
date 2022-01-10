@@ -24,22 +24,24 @@
         
 
     <button type="button"><i class="fas fa-plus"></i></button><span>15</span><button type="button"><i class="fas fa-minus"></i></button>
-
-    <button type="button">Agregar al carrito</button>
-    <% if(product != undefined){ %> 
+    <div class="mainFlex">
+       <a href=""><div class="carrito"><i id="botonCarrito"class="fas fa-cart-plus"></i></div></a>
     <a href="/products/<%= product.id%>/editar ">
-    <button type="button">Editar producto</button></a>
+        <div id="editar"><i id="botonEditar"class="far fa-edit"></i></div></a></div>
     <form action="/products/<%=product.id%>?_method=DELETE"  method="POST">
-        <% } %> 
     <button type="submit" id="eliminar">Eliminar Producto</button>
     </form>
 </section>
     </div>
     <h3>Productos relacionados</h3>
     <div class="relacionados">
-    <img src="/images/gin.jpg">
-    <img src="/images/vodka.jpg">
-    <img src="/images/champagne.jpg">
+    <% for(let i=0; i<products.length;i++){%>
+    <% if(products[i].id<=4){ %> 
+    <% if(products[i].id != product.id){ %>  
+    <img src="<%= products[i].image %> ">
+    <% } %> 
+    <% } %>
+    <% } %>  
     </div>
     </main>
 </body>
