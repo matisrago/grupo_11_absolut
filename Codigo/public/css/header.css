@@ -23,6 +23,9 @@
 .iconos{
     display: none;
 }
+.buscarOculto{
+    display: none;
+}
 #logo{
     width: 150px;
     

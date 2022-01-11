@@ -11,7 +11,7 @@
 <h3>Email:<%= user.email%> </h3>
 <h3>Fecha de nacimiento:<%= user.date%>  </h3>
 <h3>Foto de perfil: </h3>
-<img src="<%= user.image %> " alt="" id="foto">
+<img src="/images/<%= user.image %> " alt="" id="foto">
 <form action="/users/edicion/<%= user.id %>" id="boton">
     <button>Editar perfil</button>
 </form>

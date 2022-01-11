@@ -63,7 +63,7 @@ const usersControllers = {
                 date: req.body.date,
                 password: bcrypt.hashSync(req.body.password, 10),
                 repeatPassword: bcrypt.hashSync(req.body.repeatPassword, 10),
-                image : req.file.imagenUsuario
+                image : req.body.imagenUsuario
                 })
                 res.redirect("/")
         })
@@ -82,18 +82,25 @@ const usersControllers = {
     
     },
     actualizar:(req,res)=>{
-        db.Users.update({
-                name:req.body.name,
-                surname: req.body.surname,
-                date: req.body.date,
-                email: req.body.email
-                },
-            {
-                where : {id: req.params.id}
-            }
-        )
-        res.redirect("/users/detalle/"+req.params.id)
         
+        let productoAEditar = req.params.id
+		let nombreEditado = req.body.name
+		let apellidoEditado = req.body.surname
+		let edadEditada = req.body.date
+		let imagenEditada = req.body.imagenUsuario
+        console.log(nombreEditado)
+		db.Products.findOne({
+			where: [{ id: productoAEditar}]
+		})
+		.then((product)=>{
+			product.update({
+				name:nombreEditado,
+				surname:apellidoEditado,
+				date:edadEditada,
+				image:imagenEditada
+			})
+		})
+        res.redirect('/users/detalle/'+req.params.id)
         
     },
     edicion: (req,res)=>{

@@ -3,23 +3,28 @@
     <link rel="stylesheet" href="/css/edicionPerfil.css">
     <body>
         <%- include('../views/partials/header') %> 
-        <form action="/users/actualizar/<%= user.id %>" method="POST" enctype="multipart/form-data">
+        <form action="/users/detalle/<%= user.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
             <div class="datos">
             <h1>Edición de perfil</h1>
             <label for="name"> Nombre* <br>
             <input type="text" name="name" placeholder="Nombre">
+            </label>
             <br>
             <label for="surame"> Apellido*<br>
             <input  type="text" name="surname" placeholder="Apellido" id="lName">
             <br>
+            </label>
             <label for="date"> Edad* <br>
             <input  type="date" name="date" id="date">
+            </label>
             <h4 class="infor">INFORMACION DE INICIO DE SESION</h4>
             <label for="email"> Correo electronico <br>
             <input type="email" name="email"  placeholder="Correo Electronico" id="email">
+            </label>
             <br>
-            <label>Imagen de usuario</label><br>
+            <label for="imagenUsuario">Imagen de usuario<br>
             <input type="file" name = "imagenUsuario" id="file" >
+            </label>
             <br>
             <button type="submit">Enviar</button>
         </div>

@@ -15,9 +15,19 @@
                 </a>
         </div>
         <div class="busqueda-burger">
-            <div>
-                <i id="lupa" class="fas fa-search"  ></i>
+            <div class="buscarOculto">
+                <form action="/products/listado" method="POST">
+                <label for="buscado">
+                    <input type="text" placeholder="Busca tus productos">
+                </label>
+                </form>
             </div>
+            <div class="lupa">
+                <a href="">
+                <i id="lupa" class="fas fa-search"  ></i>
+                </a>
+            </div>
+           
             <div>
                <a href="/carrito"> <i id="lupa" class="fas fa-shopping-cart"></i></a>
             </div>
