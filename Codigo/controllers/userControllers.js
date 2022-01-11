@@ -87,7 +87,7 @@ const usersControllers = {
             surname: req.body.surname,
             date : req.body.date,
             email : req.body.email,
-            image : req.file.filename
+            image : req.file ? req.file.filename : req.body.oldImagen
         },
         {
             where : {id : req.params.id}
