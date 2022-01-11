@@ -27,7 +27,7 @@ router.get("/formulario",usersControllers.formulario)
 router.post("/formulario",upload.single('imagenUsuario'),validations,usersControllers.create)
 router.get("/detalle/:id",userControllers.detalle)
 router.get("/edicion/:id",userControllers.edicion)
-router.put("/detalle/:id", userControllers.actualizar)
+router.post("/detalle/:id", upload.single('imagenUsuario'),userControllers.actualizar)
 
 
 module.exports = router

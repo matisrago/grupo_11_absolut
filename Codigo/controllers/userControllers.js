@@ -81,25 +81,19 @@ const usersControllers = {
         
     
     },
-    actualizar:(req,res)=>{
-        
-        let productoAEditar = req.params.id
-		let nombreEditado = req.body.name
-		let apellidoEditado = req.body.surname
-		let edadEditada = req.body.date
-		let imagenEditada = req.body.imagenUsuario
-        console.log(nombreEditado)
-		db.Products.findOne({
-			where: [{ id: productoAEditar}]
-		})
-		.then((product)=>{
-			product.update({
-				name:nombreEditado,
-				surname:apellidoEditado,
-				date:edadEditada,
-				image:imagenEditada
-			})
-		})
+    actualizar:(req,res)=>{  
+        db.Users.update({
+            name: req.body.name,
+            surname: req.body.surname,
+            date : req.body.date,
+            email : req.body.email,
+            image : req.file.filename
+        },
+        {
+            where : {id : req.params.id}
+        }
+
+        )
         res.redirect('/users/detalle/'+req.params.id)
         
     },
