@@ -7,22 +7,24 @@
         <form action="/users/detalle/<%= user.id %>" method="POST" enctype="multipart/form-data">
             <div class="datos">
             <label for="name"> Nombre* <br>
-            <input type="text" name="name" placeholder="Nombre">
+            <input type="text" name="name" placeholder="Nombre"  value="<%= user.name %>">
             </label>
             <br>
             <label for="surame"> Apellido*<br>
-            <input  type="text" name="surname" placeholder="Apellido" id="lName">
+            <input  type="text" name="surname" placeholder="Apellido" id="lName" value="<%= user.surname %>">
             <br>
             </label>
             <label for="date"> Edad* <br>
-            <input  type="date" name="date" id="date">
+            <input  type="date" name="date" id="date"value="<%= user.date %>">
+                <br>
             </label>
             <label for="email"> Correo electronico <br>
-            <input type="email" name="email"  placeholder="Correo Electronico" id="email">
+            <input type="email" name="email"  placeholder="Correo Electronico" id="email" value="<%= user.email %>">
             </label>
             <br>
             <label for="imagenUsuario">Imagen de usuario<br>
-            <input type="file" name = "imagenUsuario" id="file" >
+                <img id="foto" src="/images/<%= user.image %> ">
+                <input type="hidden" name="oldImagen" value="<%= user.image%>">
             </label>
             <br>
             <button type="submit">Enviar</button>

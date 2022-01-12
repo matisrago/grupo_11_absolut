@@ -18,9 +18,9 @@ const productsController = require('../controllers/productController');
 
 /*** GET ALL PRODUCTS ***/ 
 router.get("/listado",productController.listado)
+router.get('/busqueda',productController.search)
 router.get('/:id', productsController.detalle);
 router.get('/:id/editar',productController.editar);
-
 router.put('/:id',upload.single('image'),productsController.agregar)
 router.delete('/:id', productsController.destroy)
 module.exports = router;

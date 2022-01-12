@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../views/partials/head') %>
+    <link rel="stylesheet" href="../css/home.css">
+<body>
+    <%- include('../views/partials/header') %>
+    <main>
+    <article>
+    <h2>Productos Buscados:</h2>
+    <div class="main-flex">
+    <% productsEncontrados.forEach(prod =>{ %> 
+        <div class="div-padre">
+          <a href="/products/<%= prod.id %>">
+            <img src="<%= prod.image %>" alt="<%= prod.name %> ">
+          </a>
+            <div class="div-hijo">
+                <div class="precio-descuento">
+                    <p class = "precios"><%= prod.price %> </p> 
+                    <p class = "descuentos">5% OFF</p>
+                </div>
+                <div class = "descripciones">
+                    <p class = "descripcion"><strong><%= prod.name %> </strong></p>
+                    <div class="a-carrito">
+                      <a id="agregar-carrito" href=""> Agregar al carrito</a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <% }) %>
+    </div>
+    </article>
+    </main>
+    <%- include('../views/partials/footer') %>   
+</body>
+</html>

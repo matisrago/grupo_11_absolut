@@ -3,11 +3,7 @@
 <link rel = "stylesheet" href="/css/detalleProducto.css">
 <script src="/js/script.js"></script>
 <body>
-    <% if(user == undefined){%>
         <%- include('../views/partials/header') %> 
-      <%}else{ %> 
-      <%- include('../views/partials/headerLogin') %> 
-      <% } %>  
     <main>
     <div class="producto">
     <% if(product != undefined){ %> 

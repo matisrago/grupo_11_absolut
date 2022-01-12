@@ -104,5 +104,14 @@
   "price": 1738.94,
   "image": "../images/merle.jpg",
   "category": "destacado"
+ },
+ {
+  "name": "",
+  "price": "",
+  "discount": "",
+  "category": "",
+  "description": "",
+  "image": "",
+  "id": "141"
  }
 ]

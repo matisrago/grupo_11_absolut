@@ -5,11 +5,8 @@
     <link rel="stylesheet" href="/css/edicionProducto.css">
     <!-- Header -->
     <body>
-        <% if(user == undefined){%>
             <%- include('../views/partials/header') %> 
-          <%}else{ %> 
-          <%- include('../views/partials/headerLogin') %> 
-          <% } %> 
+
 
         <main>
             <div class="formulario">
@@ -25,12 +22,12 @@
                             <div class="input col-md-6">
                                 <label for="name" class="form-label">Nombre del producto
                                 <br>
-                                <input type="text" id="name" name="name" placeholder="Nombre del producto" class="form-input"></label>
+                                <input type="text" id="name" name="name" placeholder="Nombre del producto" value="<%= product.name %> "class="form-input"></label>
                             </div>
                             <div class="input col-md-6">
                                 <label for="price" class="form-label">Precio del producto
                                 <br>
-                                <input type="text" id="price" name="price" placeholder="$$$$$" class="form-input"></label>
+                                <input type="text" id="price" name="price" placeholder="$$$$$" value="<%= product.price %>" class="form-input"></label>
                             </div>
                             <div class="input col-md-6">
                                 <label for="discount" class="form-label">Descuento
@@ -41,7 +38,6 @@
                                 <label for="category" class="form-label">Categoría
                                 <br>
                                 <select name="category" id="category" class="form-input">
-                                    <option value="">Elegí</option>
                                     <option value="oferta">En oferta</option>
                                     <option value="destacado">Destacado</option></label>
                                 </select>
@@ -49,7 +45,7 @@
                             <div class="input">
                                 <label for="description" class="form-label">Descripción</label>
                                 <br>
-                                <input name="description" id="description" class="form-input">
+                                <input name="description" id="description" value="<%= product.description%>"class="form-input">
                             </div>
                             <br>
                             <div class="input-buton">

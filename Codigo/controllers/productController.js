@@ -1,8 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-
 let db = require("../database/models")
-
+const Op = db.Sequelize.Op
 const productController = {
 	detalle: (req, res) => {
 		db.Products.findAll()
@@ -19,6 +18,9 @@ const productController = {
 		.then((product)=>{res.render('edicionProducto',{product,user :req.session.usuarioLogueado})})
 		
 	},
+    creacion: (req,res)=>{
+        res.render("creacionProducto",{user :req.session.usuarioLogueado})
+    },
 	agregar: (req,res ) => {
 		let ubicacionCategoria = null
 		if(req.body.category === "oferta"){
@@ -60,8 +62,14 @@ const productController = {
 	listado: (req,res)=>{
 		db.Products.findAll()
 		.then(function(productos){
-			res.render("listadoProductos",{productos:productos})
+			res.render("listadoProductos",{productos:productos,user :req.session.usuarioLogueado})
 		})
+	},
+	search:(req,res)=>{
+		db.Products.findAll(
+			{where:[{name:{[Op.like]:'%' + req.query.keyword + '%'}}]}
+		)
+		.then((productsEncontrados)=>{res.render('resultadoDeBusqueda',{productsEncontrados,user :req.session.usuarioLogueado})})
 	}
 }
 

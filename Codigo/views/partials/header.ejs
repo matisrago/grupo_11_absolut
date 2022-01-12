@@ -16,9 +16,10 @@
         </div>
         <div class="busqueda-burger">
             <div class="buscarOculto">
-                <form action="/products/listado" method="POST">
+                <form action="/products/busqueda">
                 <label for="buscado">
-                    <input type="text" placeholder="Busca tus productos">
+                    <input type="text" name="keyword"placeholder="Busca tus productos">
+                    <button type="submit">Enviar</button>
                 </label>
                 </form>
             </div>
@@ -35,7 +36,13 @@
             <a href="/agregar"><i id="lupa" class="fas fa-plus"></i></a>
             </div>
             <div>
+                <% if (user == undefined) {%> 
             <a href="/users/login"><i id="lupa" class="fas fa-portrait"></i></a>
+            <% }else{ %>
+                <div>
+                    <a href="/users/detalle/<%= user.id %>"> <p style="color: white;">Bienvenido, <%= user.name %> </p> </a>
+                 </div>
+                 <% } %> 
             </div>
             
         </div>

@@ -1,19 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    
-    </head>
+    <%- include('../views/partials/head') %>
+    <link rel="stylesheet" href="../css/listadoDeProducto.css">
     <body>
+        <%- include('../views/partials/header') %>
+        <main>
+            <article>
         <h1>Listado de Productos:</h1>
         <ul>
             <% for (let i = 0; i< productos.length; i++){%>
                 <li>
-                    <%= productos[i].name %>
-                    aaaa
+                    <a href="/products/<%= productos[i].id %> "><%= productos[i].name %></a>
                 </li>
 
             <%}%>
         </ul>
+        </article>
+        </main>
         <%- include('../views/partials/footer') %> 
     </body>
 </html>

@@ -7,7 +7,7 @@ let db = require("../database/models");
 
 const usersControllers = {
     login: (req, res)=>{
-        res.render("formDeLogin")
+        res.render("formDeLogin",{user :req.session.usuarioLogueado})
     },
     processLogin: (req,res) =>{
         let errors = validationResult(req);
@@ -33,7 +33,7 @@ const usersControllers = {
 
     },
     formulario:(req,res)=>{
-        res.render("formDeRegistro")
+        res.render("formDeRegistro",{user :req.session.usuarioLogueado})
         },
     create: (req, res) =>{
         db.Users.findOne({
@@ -53,7 +53,7 @@ const usersControllers = {
                     })
                     res.redirect("/")
             }else{
-                res.render("formDeRegistro",{errors:[{msg: "Email ya en uso"}]})
+                res.render("formDeRegistro",{errors:[{msg: "Email ya en uso"}],user :req.session.usuarioLogueado})
             }
         }).catch(()=>{
             db.Users.create({
@@ -87,7 +87,7 @@ const usersControllers = {
             surname: req.body.surname,
             date : req.body.date,
             email : req.body.email,
-            image : req.file.filename
+            image : req.file ? req.file.filename : req.body.oldImagen
         },
         {
             where : {id : req.params.id}

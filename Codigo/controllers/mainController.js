@@ -35,14 +35,29 @@ const mainController = {
     },
     
     store: (req,res) => {
-		const nuevoProducto = req.body;
-    
-        nuevoProducto.id = products[products.length-1].id + 1;
-
-        products.push(nuevoProducto);
-
-        fs.writeFileSync(productsFilePath, JSON.stringify(products, null," "));
-
+        let ubicacionCategoria = null
+		if(req.body.ubicacion === "oferta"){
+			ubicacionCategoria = 1	
+		}else{
+			ubicacionCategoria = 2
+		}
+        let productoCategoria = null
+        if(req.body.category === "vodka"){
+            productoCategoria = 1
+        }else if(req.body.category === "cervezas"){
+            productoCategoria = 2
+        }else{
+            productoCategoria = 3
+        }
+		db.Products.create({
+        name:req.body.name,
+        description:req.body.description,
+        price:req.body.price,
+        image:'/images/'+ req.file.filename,
+        id_category: productoCategoria,
+        id_ubicacion: ubicacionCategoria
+        })
+        .then((product)=>{console.log(product)})
         
         res.redirect('/');
 	}
