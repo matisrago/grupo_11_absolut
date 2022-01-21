@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const {check} = require('express-validator')
+const validation = require("../controllers/midd/validationProducts")
 const authMiddleware = require('../controllers/midd/authMiddleware')
 const mainController = require("../controllers/mainController");
 const path = require('path')
@@ -25,7 +25,7 @@ router.get("/carrito",mainController.carrito);
 
 router.get("/agregar",mainController.creacion)
 
-router.post('/agregar', upload.single('image'),mainController.store )
+router.post('/agregar', upload.single('image'),validation,mainController.store )
 
 router.get("/editar",mainController.edicion)
 

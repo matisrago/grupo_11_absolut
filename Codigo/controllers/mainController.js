@@ -28,38 +28,46 @@ const mainController = {
         res.render("carrito",{user :req.session.usuarioLogueado})
     },
     creacion: (req,res)=>{
-        res.render("creacionProducto",{user :req.session.usuarioLogueado})
+        res.render("creacionProducto",{errors: null,user :req.session.usuarioLogueado})
     },
     edicion:(req,res)=>{
         res.render("edicionProducto",{user :req.session.usuarioLogueado})
     },
     
     store: (req,res) => {
-        let ubicacionCategoria = null
-		if(req.body.ubicacion === "oferta"){
-			ubicacionCategoria = 1	
-		}else{
-			ubicacionCategoria = 2
-		}
-        let productoCategoria = null
-        if(req.body.category === "vodka"){
-            productoCategoria = 1
-        }else if(req.body.category === "cervezas"){
-            productoCategoria = 2
+        let errors = null
+        errors = validationResult(req)
+        console.log(errors)
+        if(errors.isEmpty()){
+            let ubicacionCategoria = null
+            if(req.body.ubicacion === "oferta"){
+                ubicacionCategoria = 1	
+            }else{
+                ubicacionCategoria = 2
+            }
+            let productoCategoria = null
+            if(req.body.category === "vodka"){
+                productoCategoria = 1
+            }else if(req.body.category === "cervezas"){
+                productoCategoria = 2
+            }else{
+                productoCategoria = 3
+            }
+            db.Products.create({
+            name:req.body.name,
+            description:req.body.description,
+            price:req.body.price,
+            image:'/images/'+ req.file.filename,
+            id_category: productoCategoria,
+            id_ubicacion: ubicacionCategoria
+            })
+            .then((product)=>{console.log(product)})
+            
+            res.redirect('/');
         }else{
-            productoCategoria = 3
+            res.render("creacionProducto",{errors:errors.errors,user:req.session.usuarioLogueado})
         }
-		db.Products.create({
-        name:req.body.name,
-        description:req.body.description,
-        price:req.body.price,
-        image:'/images/'+ req.file.filename,
-        id_category: productoCategoria,
-        id_ubicacion: ubicacionCategoria
-        })
-        .then((product)=>{console.log(product)})
-        
-        res.redirect('/');
+
 	}
 }
 

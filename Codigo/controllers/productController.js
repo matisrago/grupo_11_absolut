@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const{validationResult} = require("express-validator")
 let db = require("../database/models")
 const Op = db.Sequelize.Op
 const productController = {
@@ -10,42 +11,55 @@ const productController = {
 		
 	},
 	crear: (req,res ) => {
-		
 		res.render('creacionProducto',{user :req.session.usuarioLogueado})
 	},
 	editar: (req,res)=> {
 		db.Products.findByPk(req.params.id)
-		.then((product)=>{res.render('edicionProducto',{product,user :req.session.usuarioLogueado})})
+		.then((product)=>{res.render('edicionProducto',{product,user :req.session.usuarioLogueado,errors:null})})
 		
 	},
     creacion: (req,res)=>{
         res.render("creacionProducto",{user :req.session.usuarioLogueado})
     },
-	agregar: (req,res ) => {
-		let ubicacionCategoria = null
-		if(req.body.category === "oferta"){
-			ubicacionCategoria = 1	
-		}else{
-			ubicacionCategoria = 2
-		}
-		let productoAEditar = req.params.id
-		let nombreEditado = req.body.name
-		let descripcionEditada = req.body.description
-		let precioEditado = req.body.price
-		let categoriaEditada = ubicacionCategoria
-		db.Products.findOne({
-			where: [{ id: productoAEditar}]
-		})
-		.then((product)=>{
-			product.update({
-				name:nombreEditado,
-				description:descripcionEditada,
-				price:precioEditado,
-				id_ubicacion:categoriaEditada
+	editarProceso: (req,res ) => {
+		let errors = null
+		console.log(req+"----------------------------------------------------------------------------")
+		errors = validationResult(req);
+		if(errors.isEmpty()){
+			let ubicacionCategoria = null
+			if(req.body.category === "oferta"){
+				ubicacionCategoria = 1	
+			}else{
+				ubicacionCategoria = 2
+			}
+			let productoAEditar = req.params.id
+			let nombreEditado = req.body.name
+			let descripcionEditada = req.body.description
+			let precioEditado = req.body.price
+			let categoriaEditada = ubicacionCategoria
+			db.Products.findOne({
+				where: [{ id: productoAEditar}]
 			})
-		})
+			.then((product)=>{
+				product.update({
+					name:nombreEditado,
+					description:descripcionEditada,
+					price:precioEditado,
+					id_ubicacion:categoriaEditada,
+					image: req.file ? req.file.filename : req.body.oldImagen
+				})
+			})
+	
+			res.redirect('/')
+		}else{
+			db.Products.findOne({
+				where:{id:req.params.id}
+			}).then((product)=>{
+				res.render("edicionProducto",{errors:errors.errors,user:req.params.usuarioLogueado, product})
+			})
+			
+		}
 
-		res.redirect('/')
 	},
 	destroy: (req,res) => {
 		let productABorrar = req.params.id;

@@ -15,6 +15,18 @@
                         <h2 class="products-title">Formulario de Creación de producto</h2>
                     </div>
                 </div>
+                <div>
+                    <% if (errors != null) { %>
+                        <p style="color:red">ERROR!</p> 
+                        
+                            <% for (let i=0; i<errors.length;i++){ %> 
+                            <li>
+                                <%= errors[i].msg %> 
+                            </li>
+                        
+                        <% } %> 
+                        <% }  %> 
+                </div>
                 <br>
                 <div class="input">
                         <div class="row-product-detail">

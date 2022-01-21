@@ -14,6 +14,18 @@
                     <div class="col-12">
                         <h2 class="products-title">Formulario de Edición de productos</h2>
                     </div>
+                    <div>
+                        <% if (errors != null) { %>
+                            <p style="color:red">ERROR!</p> 
+                            
+                                <% for (let i=0; i<errors.length;i++){ %> 
+                                <li>
+                                    <%= errors[i].msg %> 
+                                </li>
+                            
+                            <% } %> 
+                            <% }  %> 
+                    </div>
                 </div>
                 <br>
                 <div class="input">
@@ -47,6 +59,13 @@
                                 <br>
                                 <input name="description" id="description" value="<%= product.description%>"class="form-input">
                             </div>
+                            <div class="input">
+                            <label for="imagen">Imagen de producto<br>
+                                <img id="foto" src="<%= product.image %> ">
+                                <input type="hidden" name="oldImagen" value="<%= product.image%>">
+                            </label>
+                            </div>
+                            <br>
                             <br>
                             <div class="input-buton">
                                 <button type="submit" class="buy-now-button">Guardar producto</button>
