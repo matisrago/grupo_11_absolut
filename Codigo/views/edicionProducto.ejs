@@ -4,6 +4,7 @@
     <%- include('../views/partials/head') %> 
     <link rel="stylesheet" href="/css/edicionProducto.css">
     <!-- Header -->
+    <script src="/js/validacionProductos.js"></script>
     <body>
             <%- include('../views/partials/header') %> 
 
@@ -36,6 +37,8 @@
                                 <br>
                                 <input type="text" id="name" name="name" placeholder="Nombre del producto" value="<%= product.name %> "class="form-input"></label>
                             </div>
+                            <p id="errorNombre">El nombre del producto debe tener al menos 5 letras</p>
+                            <br>
                             <div class="input col-md-6">
                                 <label for="price" class="form-label">Precio del producto
                                 <br>
@@ -59,10 +62,13 @@
                                 <br>
                                 <input name="description" id="description" value="<%= product.description%>"class="form-input">
                             </div>
+                            <p id="errorDescripcion">La descripcion debe ser de al menos 20 caracteres</p>
+                                <br>
                             <div class="input">
-                            <label for="imagen">Imagen de producto<br>
+                            <label for="image">Imagen de producto<br>
                                 <img id="foto" src="<%= product.image %> ">
                                 <input type="hidden" name="oldImagen" value="<%= product.image%>">
+                                <input type= "file" name="image" placeholder="Elegir la imagen">
                             </label>
                             </div>
                             <br>

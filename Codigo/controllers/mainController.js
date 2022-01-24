@@ -37,7 +37,6 @@ const mainController = {
     store: (req,res) => {
         let errors = null
         errors = validationResult(req)
-        console.log(errors)
         if(errors.isEmpty()){
             let ubicacionCategoria = null
             if(req.body.ubicacion === "oferta"){

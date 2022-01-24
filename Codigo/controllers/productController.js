@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const{validationResult} = require("express-validator")
+const{validationResult} = require("express-validator");
 let db = require("../database/models")
 const Op = db.Sequelize.Op
 const productController = {
@@ -23,7 +23,6 @@ const productController = {
     },
 	editarProceso: (req,res ) => {
 		let errors = null
-		console.log(req+"----------------------------------------------------------------------------")
 		errors = validationResult(req);
 		if(errors.isEmpty()){
 			let ubicacionCategoria = null
@@ -46,7 +45,7 @@ const productController = {
 					description:descripcionEditada,
 					price:precioEditado,
 					id_ubicacion:categoriaEditada,
-					image: req.file ? req.file.filename : req.body.oldImagen
+					image: req.file ? req.file.filename : req.body.oldImage
 				})
 			})
 	

@@ -15,3 +15,12 @@ div.row-product-detail{
 .input{
     margin: 10px 0px 10px 10px;
 }
+.erroresBack{
+    text-align: center;
+}
+#errorNombre{
+    display: none;
+}
+#errorDescripcion{
+    display: none;
+}

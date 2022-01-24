@@ -3,11 +3,23 @@
     <!-- Head--> 
     <%- include('../views/partials/head') %> 
     <link rel="stylesheet" href="./css/edicionProducto.css">
+    <script src="/js/validacionProductos.js"></script>
     <!-- Header -->
   
     <body>
     <%- include('../views/partials/header') %> 
-
+    <div class="erroresBack">
+        <% if ( errors != null) { %>
+            <p style="color:red">ERROR!</p> 
+            <ul>
+                <% for (let i=0; i<errors.length;i++){ %> 
+                <li>
+                    <%= errors[i].msg %> 
+                </li>
+            </ul>
+            <% } %> 
+            <% }  %> 
+    </div>
         <main>
             <div class="formulario">
                 <div class="titulo">
@@ -15,27 +27,18 @@
                         <h2 class="products-title">Formulario de Creación de producto</h2>
                     </div>
                 </div>
-                <div>
-                    <% if (errors != null) { %>
-                        <p style="color:red">ERROR!</p> 
-                        
-                            <% for (let i=0; i<errors.length;i++){ %> 
-                            <li>
-                                <%= errors[i].msg %> 
-                            </li>
-                        
-                        <% } %> 
-                        <% }  %> 
-                </div>
+
                 <br>
                 <div class="input">
                         <div class="row-product-detail">
-                            <form action="/agregar" method="POST" enctype="multipart/form-data">
+                            <form action="/agregar" method="POST" enctype="multipart/form-data" id="form">
                             <div class="input col-md-6">
                                 <label for="name" class="form-label">Nombre del producto
                                 <br>
                                 <input type="text" id="name" name="name" placeholder="Nombre del producto" class="form-input"></label>
                             </div>
+                            <p id="errorNombre">El nombre del producto debe tener al menos 5 letras</p>
+                            <br>
                             <div class="input col-md-6">
                                 <label for="price" class="form-label">Precio del producto
                                 <br>
@@ -66,13 +69,15 @@
                                 <label for="description" class="form-label">Descripción</label>
                                 <br>
                                 <input name="description" id="description" class="form-input"></label>
+                                <p id="errorDescripcion">La descripcion debe ser de al menos 20 caracteres</p>
+                                <br>
                             </div>
 
                             <input type="file" name = "image" id="file" multiple>
                             <br>
                             <br>
                             <div class="input-buton">
-                                <button type="submit" class="buy-now-button">Guardar producto</button>
+                                <input type="submit" name="button">
                             </div>
                         </form>
                         </div>
