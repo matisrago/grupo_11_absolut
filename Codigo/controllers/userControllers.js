@@ -41,7 +41,11 @@ const usersControllers = {
                 email : req.body.email,
             }
         }).then((resultado)=>{
-            if(resultado == null){
+            let errors = null
+		errors = validationResult(req);
+            if(resultado != null && errors.isEmpty()){
+                res.render("formDeRegistro",{errors:[{msg: "Email ya en uso"}],user :req.session.usuarioLogueado})    
+            }else if(resultado == null && errors.isEmpty()){
                 db.Users.create({
                     name:req.body.name ,
                     surname: req.body.surname,
@@ -52,8 +56,10 @@ const usersControllers = {
                     image : req.file.filename
                     })
                     res.redirect("/")
+            }else if(resultado != null){
+                res.render("formDeRegistro",{errors:[{msg: "Email ya en uso"},errors.errors],user :req.session.usuarioLogueado}) 
             }else{
-                res.render("formDeRegistro",{errors:[{msg: "Email ya en uso"}],user :req.session.usuarioLogueado})
+                res.render("formDeRegistro",{errors:errors.errors,user :req.session.usuarioLogueado})    
             }
         }).catch(()=>{
             db.Users.create({

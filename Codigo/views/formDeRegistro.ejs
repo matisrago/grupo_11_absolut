@@ -26,10 +26,14 @@
                 <h4 class="infor">INFORMACION PERSONAL</h4>
                 <label for="fName"> Nombre* <br>
             <input  type="text" name="name" placeholder="Nombre" id="fName">
-            </label> <br> <br>
+            </label> 
+            <p id="errorName">Este campo es obligatorio y Debes escribir un nombre valido</p>
+            <br> <br>
             <label for="lName"> Apellido* <br>
                 <input  type="text" name="surname" placeholder="Apellido" id="lName">
-                </label> <br><br>
+                </label>
+                <p id="errorApellido">Este campo es obligatorio y Debes escribir un apellido valido</p>
+                 <br><br>
             <label for="date"> Edad* <br>
             <input  type="date" name="date" id="date">
             </label><br>
@@ -45,11 +49,15 @@
 
         <label for="email"> Correo electronico <br>
         <input type="email" name="email"  placeholder="Correo Electronico" id="email">
-        </label> <br><br>
+        </label> 
+    
+        <br><br>
 
          <label for="password"> Contraseña <br>
         <input type="password" name="password"  placeholder="Contraseña" id = "password">
-         </label> <br><br>
+         </label> 
+         <p id="errorPassword">Este campo es obligatorio y debes escribir una contraseña valida</p>
+         <br><br>
 
        <label for="repeat-password"> Repetir Contraseña <br>
         <input type="password" name="repeatPassword" placeholder="Contraseña" id="repeatPassword">

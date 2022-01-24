@@ -1,6 +1,5 @@
 const path = require ('path')
 const{ body } = require('express-validator');
-
 module.exports = [
     body("name").isLength({min:5}).withMessage("El producto debe tener nombre de 5 caracteres"),
     body("description").isLength({min:20}).withMessage("Descripcion demasiado corta"),
