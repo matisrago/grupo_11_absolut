@@ -6,6 +6,8 @@ const session = require('express-session')
 const rutasMain = require("./routes/mainRouter")
 const rutasProducts = require('./routes/productsRouter')
 const rutasUsers = require('./routes/userRouter')
+const apiRutaUsers = require('./routes/api/user')
+const apiRutaProducts = require('./routes/api/products')
 
 const port = 3030
 app.use(express.static("public"));
@@ -26,4 +28,6 @@ app.set('views', path.join(__dirname, '/views'));
 
 app.use("/",rutasMain)
 app.use("/products", rutasProducts);
-app.use('/users',rutasUsers)
+app.use('/users',rutasUsers);
+app.use("/api/users",apiRutaUsers);
+app.use("/api/product",apiRutaProducts);
