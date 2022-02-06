@@ -27,12 +27,12 @@
                 <label for="fName"> Nombre* <br>
             <input  type="text" name="name" placeholder="Nombre" id="fName" required>
             </label> 
-            <p id="errorName">Este campo es obligatorio y Debes escribir un nombre valido</p>
+            <!-- <p id="errorName">Este campo es obligatorio y Debes escribir un nombre valido</p> -->
             <br> <br>
             <label for="lName"> Apellido* <br>
                 <input  type="text" name="surname" placeholder="Apellido" id="lName" required>
                 </label>
-                <p id="errorApellido">Este campo es obligatorio y Debes escribir un apellido valido</p>
+                <!-- <p id="errorApellido">Este campo es obligatorio y Debes escribir un apellido valido</p> -->
                  <br><br>
             <label for="date"> Edad* <br>
             <input  type="date" name="date" id="date" required>
@@ -42,8 +42,11 @@
 
             <label for="conditions">Acepto los terminos y condiciones 
                 <input id ="conditions" type="checkbox" name="conditions" required>
-            </label> <br><br>
+            </label> 
+            <h3 class="almedio">*Este campo es obligatorio</h3><br><br>
+            
         </div>
+        
         <div class="flex-rigth">
         <h4 class="infor">INFORMACION DE INICIO DE SESION</h4>
 
@@ -62,11 +65,14 @@
        <label for="repeat-password"> Repetir Contraseña <br>
         <input type="password" name="repeatPassword" placeholder="Contraseña" id="repeatPassword" required>
        </label> <br><br>
+       <div class="button-submit">
+        <button type ="submit" > <h1 class="enviar">Enviar</h1></button>
+         </div>
         </div>
         </div> 
-        <div class="button-submit">
-       <button type ="submit" > Enviar</button>
-        </div>
+        <!-- <div class="button-submit">
+       <button type ="submit" > <h1 class="enviar">Enviar</h1></button>
+        </div> -->
         </form>
     </article>
     </section>

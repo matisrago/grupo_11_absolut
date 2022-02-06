@@ -14,7 +14,7 @@ body {
     width: 400px;
     height: 340px;
     margin: auto;
-    margin-top: 180px;
+    margin-top: 130px;
     box-shadow: 7px 13px 37px white;
     padding: 30px 40px;
     color: white;
@@ -43,21 +43,22 @@ body {
 }
 
 .buttons {
-    width: 100%;
+    width: 40%;
     height: 10%;
     background: #71baff;
-    border: none;
     color: white;
     margin-bottom: 16px;
+    margin-left: 30%;
+    margin-top: 2px;
 }
 
 .form-login p {
-    height: 40px;
-    text-align: center;
+    
+    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-bottom: 5px solid;
+    
     margin-inline-start: 30px;
-    margin-inline-end: 30px;
+    
 }
 
 .form-login a {
