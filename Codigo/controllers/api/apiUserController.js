@@ -2,7 +2,7 @@ const db = require('../../database/models')
 
 const apiUserController= {
 listar:(req,res)=>{
-    db.Users.findAll({attributes: ['id','name','email','detail']})
+    db.Users.findAll({attributes: ['id','name','surname','email','date','detail']})
     .then(resultado=>{
 
         let respuesta = {

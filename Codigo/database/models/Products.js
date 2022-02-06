@@ -8,7 +8,8 @@ module.exports= function(sequelize,dataTypes){
         price:{type:dataTypes.FLOAT},
         image:{type:dataTypes.STRING},
         id_category:{type:dataTypes.INTEGER},
-        id_ubicacion:{type:dataTypes.INTEGER}
+        id_ubicacion:{type:dataTypes.INTEGER},
+        detail:{type:dataTypes.STRING}
     }
 
     let config ={

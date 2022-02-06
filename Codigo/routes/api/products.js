@@ -4,5 +4,7 @@ const apiProductsController = require("../../controllers/api/apiProductsControll
 
 router.get("/",apiProductsController.listar)
 router.get("/:id",apiProductsController.detalle)
+router.get("/max/last",apiProductsController.maximo)
+router.get("/category/:id",apiProductsController.categoria1)
 
 module.exports = router

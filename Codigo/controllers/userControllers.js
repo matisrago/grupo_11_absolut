@@ -53,7 +53,13 @@ const usersControllers = {
                     date: req.body.date,
                     password: bcrypt.hashSync(req.body.password, 10),
                     repeatPassword: bcrypt.hashSync(req.body.repeatPassword, 10),
-                    image : req.file.filename
+                    image : req.file.filename,
+                    detail: '/api/users/'
+                    })
+                    .then(user=>{
+                        user.update({
+                            detail:'/api/users/' + user.id
+                        })
                     })
                     res.redirect("/")
             }else if(resultado != null){

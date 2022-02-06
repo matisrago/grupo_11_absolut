@@ -58,9 +58,12 @@ const mainController = {
             price:req.body.price,
             image:'/images/'+ req.file.filename,
             id_category: productoCategoria,
-            id_ubicacion: ubicacionCategoria
+            id_ubicacion: ubicacionCategoria,
+            detail:'/api/products/'
             })
-            .then((product)=>{console.log(product)})
+            .then((product)=>{product.update({
+                detail:'/api/products/' + product.id
+            })})
             
             res.redirect('/');
         }else{
