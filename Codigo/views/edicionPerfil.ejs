@@ -4,13 +4,25 @@
     <body>
         <%- include('../views/partials/header') %> 
         <h1>Edición de perfil</h1>
+        <div>
+            <% if (errors != null) { %>
+                <p style="color:red">ERROR!</p> 
+                
+                    <% for (let i=0; i<errors.length;i++){ %> 
+                    <li>
+                        <%= errors[i].msg %> 
+                    </li>
+                
+                <% } %> 
+                <% }  %> 
+        </div>
         <form action="/users/detalle/<%= user.id %>" method="POST" enctype="multipart/form-data">
             <div class="datos">
             <label for="name"> Nombre* <br>
             <input type="text" name="name" placeholder="Nombre"  value="<%= user.name %>">
             </label>
             <br>
-            <label for="surame"> Apellido*<br>
+            <label for="surname"> Apellido*<br>
             <input  type="text" name="surname" placeholder="Apellido" id="lName" value="<%= user.surname %>">
             <br>
             </label>
@@ -22,7 +34,7 @@
             <input type="email" name="email"  placeholder="Correo Electronico" id="email" value="<%= user.email %>">
             </label>
             <br>
-            <label for="imagenUsuario">Imagen de usuario<br>
+            <label for="image">Imagen de usuario<br>
                 <img id="foto" src="/images/<%= user.image %> ">
                 <input type= "file" name="image" placeholder="Elegir la imagen">
             </label>

@@ -24,3 +24,8 @@ div.row-product-detail{
 #errorDescripcion{
     display: none;
 }
+
+#foto{
+    max-width: 200px;
+    margin: 0px -245px 20px 35px;
+}

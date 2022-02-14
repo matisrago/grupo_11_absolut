@@ -93,7 +93,10 @@ const usersControllers = {
         
     
     },
-    actualizar:(req,res)=>{  
+    actualizar:(req,res)=>{
+        let errors = null
+		errors = validationResult(req); 
+        if(errors.isEmpty()){ 
         db.Users.update({
             name: req.body.name,
             surname: req.body.surname,
@@ -106,7 +109,15 @@ const usersControllers = {
         }
 
         )
+        
         res.redirect('/users/detalle/'+req.params.id)
+        }else{
+            db.Users.findOne({
+                where : {id: req.params.id}
+            }).then((resultado)=>{
+            res.render('edicionPerfil',{errors:errors.errors,user: resultado})
+        })
+    }
         
     },
     edicion: (req,res)=>{
@@ -114,7 +125,7 @@ const usersControllers = {
         db.Users.findOne({
             where : {id: req.params.id}
         }).then((resultado)=>{
-            res.render('edicionPerfil',{user: resultado})
+            res.render('edicionPerfil',{errors:null,user: resultado})
 
         }).catch(()=>{
             res.render("formDeLogin")

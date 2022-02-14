@@ -7,6 +7,7 @@ const usersControllers = require('../controllers/userControllers');
 const validations = require('../controllers/midd/validationRegister');
 const authMiddleware = require('../controllers/midd/authMiddleware')
 const multer = require('multer')
+const validationEditPerfil = require('../controllers/midd/validationEditPerfil');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb)=> {
@@ -27,7 +28,7 @@ router.get("/formulario",usersControllers.formulario)
 router.post("/formulario",upload.single('imagenUsuario'),validations,usersControllers.create)
 router.get("/detalle/:id",userControllers.detalle)
 router.get("/edicion/:id",userControllers.edicion)
-router.post("/detalle/:id", upload.single('image'),userControllers.actualizar)
+router.post("/detalle/:id", upload.single('image'),validationEditPerfil,userControllers.actualizar)
 
 
 module.exports = router
