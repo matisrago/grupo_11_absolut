@@ -31,7 +31,7 @@
                 <br>
                 <div class="input">
                         <div class="row-product-detail">
-                            <form action="/products/<%=product.id%>?_method=PUT" method="POST">
+                            <form action="/products/<%=product.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
                             <div class="input col-md-6">
                                 <label for="name" class="form-label">Nombre del producto
                                 <br>
@@ -67,8 +67,7 @@
                             <div class="input">
                             <label for="image">Imagen de producto<br>
                                 <img id="foto" src="<%= product.image %> ">
-                                <input type="hidden" name="oldImagen" value="<%= product.image%>">
-                                <input type= "file" name="image" placeholder="Elegir la imagen">
+                                <input type= "file" name="image" placeholder="Elegir la imagen" id="file" multiple>
                             </label>
                             </div>
                             <br>

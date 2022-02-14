@@ -99,7 +99,7 @@ const usersControllers = {
             surname: req.body.surname,
             date : req.body.date,
             email : req.body.email,
-            image : req.file ? req.file.filename : req.body.oldImagen
+            image : req.file.filename
         },
         {
             where : {id : req.params.id}

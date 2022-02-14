@@ -36,6 +36,7 @@ const productController = {
 			let descripcionEditada = req.body.description
 			let precioEditado = req.body.price
 			let categoriaEditada = ubicacionCategoria
+			let imagenEditado = '/images/' +req.file.filename
 			db.Products.findOne({
 				where: [{ id: productoAEditar}]
 			})
@@ -45,7 +46,7 @@ const productController = {
 					description:descripcionEditada,
 					price:precioEditado,
 					id_ubicacion:categoriaEditada,
-					image: req.file ? req.file.filename : req.body.oldImage
+					image: imagenEditado
 				})
 			})
 	
